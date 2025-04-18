@@ -1,0 +1,29 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Beef Stew",
+        "description": "Tender beef simmered with carrots and potatoes.",
+        "ingredients": "Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
+        "instructions": "Brown beef, add chopped veggies, simmer until soft and flavorful.",
+        "image": "/beef_stew.jpeg"
+      },
+      {
+        "id": 2,
+        "name": "Mango Smoothie",
+        "description": "Refreshing tropical drink for hot days.",
+        "ingredients": "Ripe mangoes, yogurt, honey, ice cubes",
+        "instructions": "Blend all ingredients until smooth. Serve chilled.",
+        "image": "/mango_milkshake.jpeg"
+      },
+      {
+        "id": 3,
+        "name": "Vegetable Stir-Fry",
+        "description": "Colorful, crunchy veggies stir-fried in soy sauce.",
+        "ingredients": "Bell peppers, broccoli, carrots, soy sauce, garlic, sesame oil",
+        "instructions": "Stir-fry veggies on high heat for 5–7 mins with sauce.",
+        "image": "/summer_veggies.jpeg"
+      }
+    ]
+  }
+  
