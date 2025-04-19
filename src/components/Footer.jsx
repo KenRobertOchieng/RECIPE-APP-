@@ -39,7 +39,7 @@ const Footer = () => {
     );
 };
 
-const styles = {
+// const styles = {
     footer: {
         backgroundColor: 'black and white',
         color: '#fff',
@@ -58,6 +58,6 @@ const styles = {
         margin: '0 0.5rem',
         textDecoration: 'none',
     },
-};
+// };
 
 export default Footer;
