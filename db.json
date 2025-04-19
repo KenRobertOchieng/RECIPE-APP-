@@ -9,6 +9,14 @@
         "image": "/beef_stew.jpeg"
       },
       {
+        "id": 4,
+        "name": "Luo-Style Fried Tilapia",
+        "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
+        "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
+        "instructions": "Clean and score the fish. Marinate with salt, garlic, and lemon. Deep-fry until golden brown. Serve with ugali and fried sukuma wiki.",
+        "image": "/fish_fry.jpeg"
+      },
+      {
         "id": 2,
         "name": "Mango Smoothie",
         "description": "Refreshing tropical drink for hot days.",
@@ -23,6 +31,14 @@
         "ingredients": "Bell peppers, broccoli, carrots, soy sauce, garlic, sesame oil",
         "instructions": "Stir-fry veggies on high heat for 5–7 mins with sauce.",
         "image": "/summer_veggies.jpeg"
+      },
+      {
+        "id": 5,
+        "name": "Classic Pancakes",
+        "description": "Fluffy breakfast pancakes perfect with syrup or fruit.",
+        "ingredients": "Flour, milk, eggs, sugar, baking powder, butter, salt",
+        "instructions": "Mix ingredients into a batter, cook on a hot pan until golden brown.",
+        "image": "/fluffy_pancake.jpeg"
       }
     ]
   }
