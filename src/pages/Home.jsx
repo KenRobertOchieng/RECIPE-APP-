@@ -1,5 +1,7 @@
 import React from "react"
 import { useNavigate } from "react-router-dom"
+import AddRecipe from "./AddRecipe"
+
 function Home({recipes}){
 
     const navigate=useNavigate()
@@ -16,6 +18,7 @@ function Home({recipes}){
                 <button onClick={handleViewClick}>View Recipe</button>
                 <button>Edit Recipe</button>
                 <button>Delete Recipe</button>
+            
                 </div>
             </div>
         )
