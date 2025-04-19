@@ -18,7 +18,7 @@ function Home({recipes}){
                 <button onClick={handleViewClick}>View Recipe</button>
                 <button>Edit Recipe</button>
                 <button>Delete Recipe</button>
-                <AddRecipe onAddRecipe={handleAddRecipe} />
+            
                 </div>
             </div>
         )
