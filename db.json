@@ -1,45 +1,68 @@
 {
-    "recipes": [
-      {
-        "id": 1,
-        "name": "Beef Stew",
-        "description": "Tender beef simmered with carrots and potatoes.",
-        "ingredients": "Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
-        "instructions": "Brown beef, add chopped veggies, simmer until soft and flavorful.",
-        "image": "/beef_stew.jpeg"
-      },
-      {
-        "id": 4,
-        "name": "Luo-Style Fried Tilapia",
-        "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
-        "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
-        "instructions": "Clean and score the fish. Marinate with salt, garlic, and lemon. Deep-fry until golden brown. Serve with ugali and fried sukuma wiki.",
-        "image": "/fish_fry.jpeg"
-      },
-      {
-        "id": 2,
-        "name": "Mango Smoothie",
-        "description": "Refreshing tropical drink for hot days.",
-        "ingredients": "Ripe mangoes, yogurt, honey, ice cubes",
-        "instructions": "Blend all ingredients until smooth. Serve chilled.",
-        "image": "/mango_milkshake.jpeg"
-      },
-      {
-        "id": 3,
-        "name": "Vegetable Stir-Fry",
-        "description": "Colorful, crunchy veggies stir-fried in soy sauce.",
-        "ingredients": "Bell peppers, broccoli, carrots, soy sauce, garlic, sesame oil",
-        "instructions": "Stir-fry veggies on high heat for 5–7 mins with sauce.",
-        "image": "/summer_veggies.jpeg"
-      },
-      {
-        "id": 5,
-        "name": "Classic Pancakes",
-        "description": "Fluffy breakfast pancakes perfect with syrup or fruit.",
-        "ingredients": "Flour, milk, eggs, sugar, baking powder, butter, salt",
-        "instructions": "Mix ingredients into a batter, cook on a hot pan until golden brown.",
-        "image": "/fluffy_pancake.jpeg"
-      }
-    ]
-  }
-  
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Beef Stew",
+      "description": "Tender beef simmered with carrots and potatoes.",
+      "ingredients": "Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
+      "instructions": "Brown beef, add chopped veggies, simmer until soft and flavorful.",
+      "image": "/beef_stew.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Luo-Style Fried Tilapia",
+      "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
+      "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
+      "instructions": "Clean and score the fish. Marinate with salt, garlic, and lemon. Deep-fry until golden brown. Serve with ugali and fried sukuma wiki.",
+      "image": "/fish_fry.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Mango Smoothie",
+      "description": "Refreshing tropical drink for hot days.",
+      "ingredients": "Ripe mangoes, yogurt, honey, ice cubes",
+      "instructions": "Blend all ingredients until smooth. Serve chilled.",
+      "image": "/mango_milkshake.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Vegetable Stir-Fry",
+      "description": "Colorful, crunchy veggies stir-fried in soy sauce.",
+      "ingredients": "Bell peppers, broccoli, carrots, soy sauce, garlic, sesame oil",
+      "instructions": "Stir-fry veggies on high heat for 5–7 mins with sauce.",
+      "image": "/summer_veggies.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Classic Pancakes",
+      "description": "Fluffy breakfast pancakes perfect with syrup or fruit.",
+      "ingredients": "Flour, milk, eggs, sugar, baking powder, butter, salt",
+      "instructions": "Mix ingredients into a batter, cook on a hot pan until golden brown.",
+      "image": "/fluffy_pancake.jpeg"
+    },
+    {
+      "id": "0b7d",
+      "name": "hakal",
+      "description": "hqiuieh",
+      "ingredients": "jjqhjf",
+      "instructions": "hejejqp",
+      "image": "https://i.pinimg.com/236x/b8/55/fa/b855fa8e30b4d0b5595cff35af8c8643.jpg"
+    },
+    {
+      "id": "9b8e",
+      "name": "jhaji",
+      "description": "ajnkaj",
+      "ingredients": "jakjfh",
+      "instructions": "mnam",
+      "image": "https://i.pinimg.com/474x/3b/37/38/3b3738324d529233d6f004a165505c83.jpg"
+    },
+    {
+      "id": "35a4",
+      "name": "ahjhsdi",
+      "description": "jahjhap",
+      "ingredients": "anjai",
+      "instructions": "kweokjiau",
+      "image": "https://i.pinimg.com/236x/1a/fb/95/1afb95a0d8482e94d31fd6eaf4da9f9a.jpg"
+    }
+  ]
+}
