@@ -3,7 +3,8 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: wheat;
-    height: 100vh;
+     height: 100vh; 
+ 
 
 }
 img{
@@ -64,13 +65,13 @@ nav{
     flex-direction: column;
 }
 .main-section img{
-    box-shadow: 0px 0px 4px;
+    box-shadow: 0px 0px 7px;
     border-radius: 10px;
     margin: 30px;
     /* border: solid 2px; */
     border: none;
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
 }
 .myBtn{
     gap: 20px;
@@ -94,5 +95,10 @@ span{
     font-size: 33px;
 }
 p{
-    font-size: 33px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+.loading-data{
+    /* align-items: center; */
 }
