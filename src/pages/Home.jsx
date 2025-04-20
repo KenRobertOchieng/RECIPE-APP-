@@ -2,7 +2,7 @@ import React from "react"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import Footer from "../components/Footer"
-import AddRecipe from "./AddRecipe"
+
 
 function Home({recipes}){
     const [loading,setloading]=useState('')
