@@ -5,11 +5,11 @@ const Footer = () => {
 
     useEffect(() => {
         fetch("http://localhost:3000/recipes")
-          .then((response) => response.json())
-          .then((data) => setData(data))
-          .catch((error) =>
-            console.error("Error fetching footer data:", error)
-          );
+            .then((response) => response.json())
+            .then((data) => setData(data))
+            .catch((error) =>
+                console.error("Error fetching footer data:", error)
+            );
     }, []);
 
     return (
@@ -39,9 +39,9 @@ const Footer = () => {
     );
 };
 
-// const styles = {
+const styles = {
     footer: {
-        backgroundColor: 'black and white',
+        backgroundColor: 'black', // Changed to a valid color
         color: '#fff',
         textAlign: 'center',
         padding: '1rem',
@@ -58,6 +58,6 @@ const Footer = () => {
         margin: '0 0.5rem',
         textDecoration: 'none',
     },
-// };
+};
 
 export default Footer;
