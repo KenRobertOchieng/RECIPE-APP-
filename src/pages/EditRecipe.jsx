@@ -1,90 +1,94 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-function EditRecipe({ onEditRecipe }) {
-  const { id } = useParams(); 
-  const navigate = useNavigate(); 
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
-  const [ingredients, setIngredients] = useState("");
-  const [instructions, setInstructions] = useState("");
-  const [imageUrl, setImageUrl] = useState("");
+function EditRecipe() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [recipe, setRecipe] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  
   useEffect(() => {
     fetch(`http://localhost:3000/recipes/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        setName(data.name);
-        setDescription(data.description);
-        setIngredients(data.ingredients);
-        setInstructions(data.instructions);
-        setImageUrl(data.imageUrl);
+        setRecipe(data);
+        setLoading(false);
       })
-      .catch((err) => console.error("Error loading recipe:", err));
+      .catch((error) => {
+        console.error("Failed to fetch recipe:", error);
+        setLoading(false);
+      });
   }, [id]);
 
-  
-  function handleSubmit(e) {
-    e.preventDefault();
-
-    
-    const updatedRecipe = {
-      name,
-      description,
-      ingredients,
-      instructions,
-      imageUrl,
-    };
-
-    onEditRecipe(updatedRecipe);
-
-    
-    setName("");
-    setDescription("");
-    setIngredients("");
-    setInstructions("");
-    setImageUrl("");
-
-    
-    navigate("/");
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setRecipe((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch(`http://localhost:3000/recipes/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(recipe),
+    })
+      .then((res) => res.json())
+      .then((updated) => {
+        console.log("Updated successfully:", updated);
+        navigate(`/recipes/${id}`, { state: updated });
+      })
+      .catch((err) => console.error("Error updating recipe:", err));
+  }
+
+    if (loading) return <p>Why in a hurry Tuliz!!!
+        ...</p>;
+  if (!recipe) return <p>Edit Recipe not found.</p>;
+
   return (
-    <div className="edit-recipe">
-      <h1>Edit Recipe</h1>
+    <div className="my-edit">
+      <h2>Edit Recipe</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
+          name="name"
           placeholder="Recipe name..."
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={recipe.name}
+          onChange={handleChange}
         />
         <input
           type="text"
-          placeholder="Recipe description..."
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
+          name="description"
+          placeholder="Description..."
+          value={recipe.description}
+          onChange={handleChange}
         />
         <input
           type="text"
-          placeholder="Recipe ingredients..."
-          value={ingredients}
-          onChange={(e) => setIngredients(e.target.value)}
+          name="ingredients"
+          placeholder="Ingredients..."
+          value={recipe.ingredients}
+          onChange={handleChange}
         />
         <input
           type="text"
-          placeholder="Recipe instructions..."
-          value={instructions}
-          onChange={(e) => setInstructions(e.target.value)}
+          name="instructions"
+          placeholder="Instructions..."
+          value={recipe.instructions}
+          onChange={handleChange}
         />
         <input
           type="text"
+          name="image"
           placeholder="Image URL..."
-          value={imageUrl}
-          onChange={(e) => setImageUrl(e.target.value)}
+          value={recipe.image}
+          onChange={handleChange}
         />
-        <button type="submit">Save Changes</button>
+        <button type="submit">Edit</button>
       </form>
     </div>
   );

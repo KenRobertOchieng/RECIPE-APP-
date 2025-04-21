@@ -31,7 +31,6 @@
       "ingredients": "Bell peppers, broccoli, carrots, soy sauce, garlic, sesame oil",
       "instructions": "Stir-fry veggies on high heat for 5–7 mins with sauce.",
       "image": "/summer_veggies.jpeg"
-<<<<<<< HEAD
     },
     {
       "id": "5",
@@ -58,7 +57,7 @@
       "image": "https://nakuru.mtaawangu.co.ke/_next/image?url=https%3A%2F%2Flocal.nation.co.ke%2Fresource%2Fblob%2F4347944%2F3c47c6d6c65599adbe8c331fbbc6a6f1%2Fsmocha-2-data.jpg&w=1920&q=75"
     },
     {
-      "id": "a34e",
+      "id": "77ca",
       "name": "",
       "description": "",
       "ingredients": "",
@@ -66,7 +65,7 @@
       "image": ""
     },
     {
-      "id": "013a",
+      "id": "eea6",
       "name": "",
       "description": "",
       "ingredients": "",
@@ -74,7 +73,7 @@
       "image": ""
     },
     {
-      "id": "482b",
+      "id": "e1dd",
       "name": "",
       "description": "",
       "ingredients": "",
@@ -82,14 +81,52 @@
       "image": ""
     },
     {
-      "id": "aca3",
+      "id": "c422",
       "name": "",
       "description": "",
       "ingredients": "",
       "instructions": "",
       "image": ""
-=======
->>>>>>> 360a7eb4d7e7bbf7f9bb3be6af057ea4bc9e60df
+    },
+    {
+      "id": "7e84",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "c831",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "0b3e",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "8218",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "3af5",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
     }
   ]
 }
