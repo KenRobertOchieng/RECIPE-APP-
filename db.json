@@ -1,7 +1,7 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Beef Stew",
       "description": "Tender beef simmered with carrots and potatoes.",
       "ingredients": "Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
@@ -9,7 +9,7 @@
       "image": "/beef_stew.jpeg"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Luo-Style Fried Tilapia",
       "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
       "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
@@ -17,7 +17,7 @@
       "image": "/fish_fry.jpeg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Mango Smoothie",
       "description": "Refreshing tropical drink for hot days.",
       "ingredients": "Ripe mangoes, yogurt, honey, ice cubes",
@@ -25,7 +25,7 @@
       "image": "/mango_milkshake.jpeg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Vegetable Stir-Fry",
       "description": "Colorful, crunchy veggies stir-fried in soy sauce.",
       "ingredients": "Bell peppers, broccoli, carrots, soy sauce, garlic, sesame oil",
@@ -33,7 +33,7 @@
       "image": "/summer_veggies.jpeg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Classic Pancakes",
       "description": "Fluffy breakfast pancakes perfect with syrup or fruit.",
       "ingredients": "Flour, milk, eggs, sugar, baking powder, butter, salt",
@@ -41,12 +41,20 @@
       "image": "/fluffy_pancake.jpeg"
     },
     {
-      "id": "d655",
-      "name": "ajihhf",
-      "description": "fkqjkef",
-      "ingredients": "ajjqphif",
-      "instructions": "fleke",
-      "image": "https://i.pinimg.com/236x/6f/a6/9c/6fa69c8c590c353121bb7f4542a97dcf.jpg"
+      "id": "f3a9",
+      "name": "hjfkae",
+      "description": "adjjfa",
+      "ingredients": "aknaf",
+      "instructions": "anfa",
+      "image": "https://i.pinimg.com/236x/96/4f/45/964f451f7cfa207d3c82cb8ba690c521.jpg"
+    },
+    {
+      "id": "abc1",
+      "name": "qwgfqwgg",
+      "description": "wgwgwg",
+      "ingredients": "gwgwgw",
+      "instructions": "wgwgwgw",
+      "image": "https://nakuru.mtaawangu.co.ke/_next/image?url=https%3A%2F%2Flocal.nation.co.ke%2Fresource%2Fblob%2F4347944%2F3c47c6d6c65599adbe8c331fbbc6a6f1%2Fsmocha-2-data.jpg&w=1920&q=75"
     }
   ]
 }

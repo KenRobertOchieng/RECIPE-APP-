@@ -1,32 +1,27 @@
+
 import React from 'react';
 
-const Footer = () => {
-
+function Footer() {
     return (
-        <footer >
-            <p >© {new Date().getFullYear()} Recipe App. All rights reserved.</p>
-            <p >Discover delicious recipes and share your culinary creations with the world.</p>
+        <footer>
+            <p>© {new Date().getFullYear()} Recipe App. All rights reserved.</p>
+            <p>Discover delicious recipes and share your culinary creations with the world.</p>
             <div>
-                <a href="/privacy" >Privacy Policy</a>
-                <a href="/terms" >Terms of Service</a>
-                <a href="/about" >About Us</a>
-                <a href="/contact" >Contact Us</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
             </div>
-            <div >
-                <p style={styles.text}>Follow us on:</p>
+            <div>
+                <p>Follow us on:</p>
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
                 <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">Our Website</a>
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
-            
-                
-                    
-                
-            
         </footer>
     );
-};
+}
 
 export default Footer;
