@@ -6,7 +6,7 @@ function RecipeForm({taskAdd}){
     const [description,setDescription]=useState('')
     const [ingredients,setIngredients]=useState('')
     const [instructions,setInstructions]=useState('')
-    const [imageUrl, setImageUrl] = useState("");
+    const [imageUrl, setImageUrl]=useState('');
     
     //function for adding recipe
     function handleSubmit(e){
