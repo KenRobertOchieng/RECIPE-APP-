@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import Footer from "../components/Footer"
 
 
-function Home({recipes}){
+function Home({recipes, setRecipes}){
     const [loading,setloading]=useState('')
     const navigate=useNavigate()
     const mappedRecipes=recipes.map((recipe)=>{
@@ -13,7 +13,24 @@ function Home({recipes}){
             setTimeout(()=>{
                 navigate(`/recipes/${recipe.id}`,{state:recipe})
             },4000)
-        }
+        };
+        const handleDeleteClick = (id) => {
+            fetch(`http://localhost:3000/recipes/${id}`, {
+                method: 'DELETE',
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Update the local state to remove the deleted recipe
+                    setRecipes(prevRecipes => prevRecipes.filter(recipe => recipe.id !== id));
+                    console.log(`Recipe with ID ${id} deleted successfully.`);
+                } else {
+                    console.error('Failed to delete recipe.');
+                }
+            })
+            .catch(error => {
+                console.error('Error deleting recipe:', error);
+            });
+        };
         return(
             <div key={recipe.id} className="main-section">
                 <h1>{recipe.name}</h1>
