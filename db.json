@@ -31,6 +31,7 @@
       "ingredients": "Bell peppers, broccoli, carrots, soy sauce, garlic, sesame oil",
       "instructions": "Stir-fry veggies on high heat for 5–7 mins with sauce.",
       "image": "/summer_veggies.jpeg"
+<<<<<<< HEAD
     },
     {
       "id": "5",
@@ -87,6 +88,8 @@
       "ingredients": "",
       "instructions": "",
       "image": ""
+=======
+>>>>>>> 360a7eb4d7e7bbf7f9bb3be6af057ea4bc9e60df
     }
   ]
 }

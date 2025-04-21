@@ -15,6 +15,10 @@ function Home({recipes, setRecipes}){
             },4000)
         };
         const handleDeleteClick = (id) => {
+            const confirmDelete = window.confirm(`Are you sure you want to delete ${recipe.name}?`);
+            if(!confirmDelete){
+                return;
+            }
             fetch(`http://localhost:3000/recipes/${id}`, {
                 method: 'DELETE',
             })
@@ -45,7 +49,7 @@ function Home({recipes, setRecipes}){
                 <div className="myBtn">
                 <button onClick={handleViewClick}>View Recipe</button>
                 <button>Edit Recipe</button>
-                <button>Delete Recipe</button>
+                <button onClick={()=> handleDeleteClick(recipe.id)}>Delete Recipe</button>
             
                 </div>
             </div>
