@@ -2,6 +2,8 @@ import { useLocation } from "react-router-dom"
 function RecipeDetails(){
     const location=useLocation()
     const data=location.state
+    console.log(location.state)
+
     return(
         <div className="main-section">
                <h1>{data.name}</h1>
