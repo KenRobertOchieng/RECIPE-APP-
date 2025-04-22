@@ -67,4 +67,9 @@ function Home({recipes, setRecipes}){
             </>    
             )
 }
-export default Home
+
+
+export default Home;
+
+
+// Ken shika hii
