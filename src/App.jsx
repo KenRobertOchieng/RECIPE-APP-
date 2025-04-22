@@ -28,10 +28,10 @@ function App() {
                 <Nav />
             </div>
             <Routes>
-                <Route path="/" element={<Home recipes={recipes}/>} />
+                <Route path="/" element={<Home recipes={recipes} setRecipes={setRecipes}/>} />
                 <Route path="/add" element={<AddRecipe />} />
                 <Route path="/edit/:id" element={<EditRecipe />} />
-                <Route path="/recipes/:id" element={<RecipeDetails />} />
+                <Route path="/recipes/:id" element={<RecipeDetails/>} />
     
             </Routes>
         </>

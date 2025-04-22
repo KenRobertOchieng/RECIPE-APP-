@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom"
-function RecipeDetails(){
+import Home from "./Home"
+function RecipeDetails({setRecipes}){
     const location=useLocation()
     const data=location.state
     console.log(location.state)
@@ -13,7 +14,6 @@ function RecipeDetails(){
                 <p> <span>Instructions: </span>{data.instructions}</p>
                 <div className="myBtn">
                 <button>Edit</button>
-                <button>Delete</button>
                 </div>
         </div>
     )
