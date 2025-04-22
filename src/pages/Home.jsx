@@ -55,7 +55,6 @@ function Home({recipes, setRecipes}){
             
                 </div>
             </div>
-          </div>
         );
     })
     return(
