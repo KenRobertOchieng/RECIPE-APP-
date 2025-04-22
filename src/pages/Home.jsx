@@ -1,6 +1,7 @@
-<div className="myBtn"></div>
+
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { FaTrash, FaEdit } from "react-icons/fa";
 import Footer from "../components/Footer"
 
 
@@ -12,7 +13,7 @@ function Home({recipes, setRecipes}){
             setloading(recipe.id)
             setTimeout(()=>{
                 navigate(`/recipes/${recipe.id}`,{state:recipe})
-            },4000)
+            },1000)
         };
         const handleDeleteClick = (id) => {
             const confirmDelete = window.confirm(`Are you sure you want to delete ${recipe.name}?`);
@@ -36,27 +37,27 @@ function Home({recipes, setRecipes}){
             });
         };
         return (
-          <div key={recipe.id} className="main-section">
+          <div key={recipe.id} className="main-section" >
+            <img src={recipe.image} alt={recipe.name} onClick={handleViewClick} style={{cursor:'pointer'}} />
             <h1>{recipe.name}</h1>
-            <img src={recipe.image} alt={recipe.name} />
-            <p>
+            {/* <p>
               <span>Description: </span>
               {recipe.description}
-            </p>
+            </p> */}
 
             {loading === recipe.id && (
               <p className="loading-data">Just a sec....🤏</p>
             )}
 
             <div className="myBtn">
-              <button onClick={handleViewClick}>View Recipe</button>
+
               <button onClick={() => navigate(`/edit/${recipe.id}`)}>
-                Edit Recipe
+                <FaEdit className="edit"/>
               </button>
 
               
               <button onClick={() => handleDeleteClick(recipe.id)}>
-                Delete Recipe
+                <FaTrash className="trash"/>
               </button>
             </div>
           </div>
@@ -65,7 +66,9 @@ function Home({recipes, setRecipes}){
     return(
         <>
         <div className="my-home">
+            <div className="card-wrapper">
         {mappedRecipes}
+        </div>
         <Footer/>
             </div>
             </>    

@@ -1,8 +1,16 @@
 {
   "recipes": [
     {
+      "id": "1",
+      "name": "Beef Stew",
+      "description": "Tender beef simmered with carrots and potatoes.",
+      "ingredients": "Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
+      "instructions": "Brown beef, add chopped veggies, simmer until soft and flavorful.",
+      "image": "/beef_stew.jpeg"
+    },
+    {
       "id": "4",
-      "name": "Tilapia",
+      "name": "Luo-Style Fried Tilapia",
       "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
       "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
       "instructions": "Clean and score the fish. Marinate with salt, garlic, and lemon. Deep-fry until golden brown. Serve with ugali and fried sukuma wiki.",
@@ -10,7 +18,7 @@
     },
     {
       "id": "2",
-      "name": "Mango Smoothie",
+      "name": "Mango juice",
       "description": "Refreshing tropical drink for hot days.",
       "ingredients": "Ripe mangoes, yogurt, honey, ice cubes",
       "instructions": "Blend all ingredients until smooth. Serve chilled.",
@@ -32,5 +40,4 @@
       "instructions": "Mix ingredients into a batter, cook on a hot pan until golden brown.",
       "image": "/fluffy_pancake.jpeg"
     }
-  ]
-}
+]}
