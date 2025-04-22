@@ -1,24 +1,8 @@
 {
   "recipes": [
     {
-      "id": "1",
-      "name": "Beef Stew",
-      "description": "Tender beef simmered with carrots and potatoes.",
-      "ingredients": "Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
-      "instructions": "Brown beef, add chopped veggies, simmer until soft and flavorful.",
-      "image": "/beef_stew.jpeg"
-    },
-    {
-      "id": "4",
-      "name": "Luo-Style Fried Tilapia",
-      "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
-      "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
-      "instructions": "Clean and score the fish. Marinate with salt, garlic, and lemon. Deep-fry until golden brown. Serve with ugali and fried sukuma wiki.",
-      "image": "/fish_fry.jpeg"
-    },
-    {
       "id": "2",
-      "name": "Mango Smoothie",
+      "name": "Mango juice",
       "description": "Refreshing tropical drink for hot days.",
       "ingredients": "Ripe mangoes, yogurt, honey, ice cubes",
       "instructions": "Blend all ingredients until smooth. Serve chilled.",
@@ -33,124 +17,29 @@
       "image": "/summer_veggies.jpeg"
     },
     {
-      "id": "5",
-      "name": "Classic Pancakes",
-      "description": "Fluffy breakfast pancakes perfect with syrup or fruit.",
-      "ingredients": "Flour, milk, eggs, sugar, baking powder, butter, salt",
-      "instructions": "Mix ingredients into a batter, cook on a hot pan until golden brown.",
-      "image": "/fluffy_pancake.jpeg"
+      "id": "1a80",
+      "name": "vkjkfgd",
+      "description": "dfkjksd",
+      "ingredients": "hhdh",
+      "instructions": "shhsseu",
+      "image": "https://i.pinimg.com/736x/58/4a/2e/584a2e8e607780fdec1fd74eabcfc114.jpg"
     },
     {
-      "id": "f3a9",
-      "name": "hjfkae",
-      "description": "adjjfa",
-      "ingredients": "aknaf",
-      "instructions": "anfa",
-      "image": "https://i.pinimg.com/236x/96/4f/45/964f451f7cfa207d3c82cb8ba690c521.jpg"
+      "id": "3d2c",
+      "name": "dskaj",
+      "description": "ahjhla",
+      "ingredients": "anmnkaj",
+      "instructions": "alnklansdf",
+      "image": "https://i.pinimg.com/236x/ec/b7/5d/ecb75df66917c62cb1261e3d6eb54cda.jpg"
     },
     {
-      "id": "abc1",
-      "name": "qwgfqwgg",
-      "description": "wgwgwg",
-      "ingredients": "gwgwgw",
-      "instructions": "wgwgwgw",
-      "image": "https://nakuru.mtaawangu.co.ke/_next/image?url=https%3A%2F%2Flocal.nation.co.ke%2Fresource%2Fblob%2F4347944%2F3c47c6d6c65599adbe8c331fbbc6a6f1%2Fsmocha-2-data.jpg&w=1920&q=75"
-    },
-    {
-      "id": "77ca",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "eea6",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "e1dd",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "c422",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "7e84",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "c831",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "0b3e",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "8218",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "3af5",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "fafd",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "4e6c",
-      "name": "Githeri",
-      "description": "beans and maize",
-      "ingredients": "yum yum yum",
-      "instructions": "1 2 3 tamu",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jAyWNld4-Odh-X_EfRl02C6WEL0g4pFjLw&s"
-    },
-    {
-      "id": "d830",
-      "name": "Mukimo",
-      "description": "yum yum yum",
-      "ingredients": "tamu",
-      "instructions": "1 2 3 tamu",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWVULm4WMvnLVsD3MKVdPrSTSiN5MnKoeffSGj4ivnr0E_F6cMwEgqOuGZyXeAwSPERP-Z6XTgfIfE4aFAWk2hMn_QSWCOwA5WcbWCa8"
+      "id": "fd6f",
+      "name": "fhhpiaih",
+      "description": "aiiphfiaoad",
+      "ingredients": "ajhijad",
+      "instructions": "ahiohad",
+      "image": "https://i.pinimg.com/236x/d8/8e/b3/d88eb35eaa368c8a198c2aee47176709.jpg"
     }
+    
   ]
 }
