@@ -1,4 +1,5 @@
-import React from "react"
+// import React from "react"
+import { FaTrash } from "react-icons/fa"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import Footer from "../components/Footer"
@@ -12,7 +13,7 @@ function Home({recipes, setRecipes}){
             setloading(recipe.id)
             setTimeout(()=>{
                 navigate(`/recipes/${recipe.id}`,{state:recipe})
-            },4000)
+            },2000)
         };
         const handleDeleteClick = (id) => {
             const confirmDelete = window.confirm(`Are you sure you want to delete ${recipe.name}?`);
@@ -49,7 +50,7 @@ function Home({recipes, setRecipes}){
                 <div className="myBtn">
                 <button onClick={handleViewClick}>View Recipe</button>
                 <button>Edit Recipe</button>
-                <button onClick={()=> handleDeleteClick(recipe.id)}>Delete Recipe</button>
+                <button onClick={()=> handleDeleteClick(recipe.id)}>  <FaTrash /> </button>
             
                 </div>
             </div>
