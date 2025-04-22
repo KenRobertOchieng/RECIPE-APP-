@@ -1,7 +1,7 @@
 
-import React from "react";
-function Footer(){
+import React from 'react';
 
+function Footer() {
     return (
         <footer>
             <p>© {new Date().getFullYear()} Recipe App. All rights reserved.</p>
@@ -14,15 +14,14 @@ function Footer(){
             </div>
             <div>
                 <p>Follow us on:</p>
-                <a href="https://facebook.com" target="_blank" rel="">Facebook</a>
-                <a href="https://twitter.com"  target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
                 <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">Our Website</a>
-                <a href="https://github.com"  target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
         </footer>
     );
 }
-
 
 export default Footer;

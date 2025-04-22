@@ -2,6 +2,7 @@
 import { FaTrash } from "react-icons/fa"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { FaTrash, FaEdit } from "react-icons/fa";
 import Footer from "../components/Footer"
 
 
@@ -54,12 +55,15 @@ function Home({recipes, setRecipes}){
             
                 </div>
             </div>
-        )
+          </div>
+        );
     })
     return(
         <>
         <div className="my-home">
+            <div className="card-wrapper">
         {mappedRecipes}
+        </div>
         <Footer/>
             </div>
             </>    
