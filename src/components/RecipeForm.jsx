@@ -41,9 +41,9 @@ function RecipeForm({ taskAdd }) {
     }
 
     return (
-        <div className="my-add-container"> {/* Apply a container class */}
+        <div className="my-add-container"> 
             <h2>Add Your Recipe</h2>
-            <form onSubmit={handleSubmit} className="add-recipe-form"> {/* Apply a form class */}
+            <form onSubmit={handleSubmit} className="add-recipe-form">
                 <div className="form-group">
                     <label htmlFor="name">Recipe Name:</label>
                     <input

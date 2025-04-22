@@ -25,7 +25,6 @@ function Home({recipes, setRecipes}){
             })
             .then(response => {
                 if (response.ok) {
-                    // Update the local state to remove the deleted recipe
                     setRecipes(prevRecipes => prevRecipes.filter(recipe => recipe.id !== id));
                     console.log(`Recipe with ID ${id} deleted successfully.`);
                 } else {
