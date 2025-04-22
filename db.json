@@ -1,16 +1,8 @@
 {
   "recipes": [
     {
-      "id": "1",
-      "name": "Beef Stew",
-      "description": "Tender beef simmered with carrots and potatoes.",
-      "ingredients": "Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
-      "instructions": "Brown beef, add chopped veggies, simmer until soft and flavorful.",
-      "image": "/beef_stew.jpeg"
-    },
-    {
       "id": "4",
-      "name": "Luo-Style Fried Tilapia",
+      "name": "Tilapia",
       "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
       "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
       "instructions": "Clean and score the fish. Marinate with salt, garlic, and lemon. Deep-fry until golden brown. Serve with ugali and fried sukuma wiki.",
