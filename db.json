@@ -31,6 +31,102 @@
       "ingredients": "Bell peppers, broccoli, carrots, soy sauce, garlic, sesame oil",
       "instructions": "Stir-fry veggies on high heat for 5–7 mins with sauce.",
       "image": "/summer_veggies.jpeg"
+    },
+    {
+      "id": "5",
+      "name": "Classic Pancakes",
+      "description": "Fluffy breakfast pancakes perfect with syrup or fruit.",
+      "ingredients": "Flour, milk, eggs, sugar, baking powder, butter, salt",
+      "instructions": "Mix ingredients into a batter, cook on a hot pan until golden brown.",
+      "image": "/fluffy_pancake.jpeg"
+    },
+    {
+      "id": "f3a9",
+      "name": "hjfkae",
+      "description": "adjjfa",
+      "ingredients": "aknaf",
+      "instructions": "anfa",
+      "image": "https://i.pinimg.com/236x/96/4f/45/964f451f7cfa207d3c82cb8ba690c521.jpg"
+    },
+    {
+      "id": "abc1",
+      "name": "qwgfqwgg",
+      "description": "wgwgwg",
+      "ingredients": "gwgwgw",
+      "instructions": "wgwgwgw",
+      "image": "https://nakuru.mtaawangu.co.ke/_next/image?url=https%3A%2F%2Flocal.nation.co.ke%2Fresource%2Fblob%2F4347944%2F3c47c6d6c65599adbe8c331fbbc6a6f1%2Fsmocha-2-data.jpg&w=1920&q=75"
+    },
+    {
+      "id": "77ca",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "eea6",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "e1dd",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "c422",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "7e84",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "c831",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "0b3e",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "8218",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "3af5",
+      "name": "",
+      "description": "",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
     }
   ]
 }

@@ -1,4 +1,4 @@
-import React from "react"
+<div className="myBtn"></div>
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import Footer from "../components/Footer"
@@ -35,25 +35,32 @@ function Home({recipes, setRecipes}){
                 console.error('Error deleting recipe:', error);
             });
         };
-        return(
-            <div key={recipe.id} className="main-section">
-                <h1>{recipe.name}</h1>
-                <img src={recipe.image} alt={recipe.name}/>
-                <p><span>Description: </span>{recipe.description}</p>
+        return (
+          <div key={recipe.id} className="main-section">
+            <h1>{recipe.name}</h1>
+            <img src={recipe.image} alt={recipe.name} />
+            <p>
+              <span>Description: </span>
+              {recipe.description}
+            </p>
 
-               {loading===recipe.id
-                &&
-                <p className="loading-data">Just a sec....🤏</p>
-                }
-    
-                <div className="myBtn">
-                <button onClick={handleViewClick}>View Recipe</button>
-                <button>Edit Recipe</button>
-                <button onClick={()=> handleDeleteClick(recipe.id)}>Delete Recipe</button>
-            
-                </div>
+            {loading === recipe.id && (
+              <p className="loading-data">Just a sec....🤏</p>
+            )}
+
+            <div className="myBtn">
+              <button onClick={handleViewClick}>View Recipe</button>
+              <button onClick={() => navigate(`/edit/${recipe.id}`)}>
+                Edit Recipe
+              </button>
+
+              
+              <button onClick={() => handleDeleteClick(recipe.id)}>
+                Delete Recipe
+              </button>
             </div>
-        )
+          </div>
+        );
     })
     return(
         <>
