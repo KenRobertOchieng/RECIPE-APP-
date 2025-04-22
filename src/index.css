@@ -1,14 +1,14 @@
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
     background-color: wheat;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-}
+     height: 100vh; 
+ 
 
-img {
+}
+img{
+    margin-right: 280px;
     height: 150px;
     width: 165px;
 }
@@ -119,32 +119,9 @@ span {
 
 p {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 30px;
 }
-
-.edit {
-    font-size: 40px;
-    color: blue;
-}
-
-.edit:hover {
-    font-size: 45px;
-}
-
-.trash {
-    color: red;
-    font-size: 40px;
-}
-
-.trash:hover {
-    font-size: 45px;
-}
-
-.view {
-    font-size: 40px;
-}
-
-.view:hover {
-    font-size: 45px;
-}
+/* .loading-data{ */
+    /* align-items: center; */
+/* } */
