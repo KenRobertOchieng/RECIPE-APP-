@@ -120,7 +120,7 @@ p{
     background-image: url("/cake.png");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 75%;
+    opacity: 74%;
 }
 
 /* adding custom font  */
@@ -133,11 +133,11 @@ p{
 
 .trash {
     color: red;
-    font-size: 40px;
+    font-size: 39px;
 }
 
 .trash:hover {
-    font-size: 45px;
+    font-size: 44px;
 }
 
 .view {
