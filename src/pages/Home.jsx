@@ -35,11 +35,14 @@ function Home({recipes, setRecipes}){
                 console.error('Error deleting recipe:', error);
             });
         };
-        return(
-            <div key={recipe.id} className="main-section">
-                <h1>{recipe.name}</h1>
-                <img src={recipe.image} alt={recipe.name}/>
-                <p><span>Description: </span>{recipe.description}</p>
+        return (
+          <div key={recipe.id} className="main-section">
+            <h1>{recipe.name}</h1>
+            <img src={recipe.image} alt={recipe.name} />
+            <p>
+              <span>Description: </span>
+              {recipe.description}
+            </p>
 
                {loading===recipe.id
                 &&
