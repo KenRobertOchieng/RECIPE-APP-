@@ -35,24 +35,7 @@ function Home({ recipes, setRecipes }) {
                 console.error('Error deleting recipe:', error);
             });
     };
-
-    return (
-               {loading===recipe.id
-                &&
-                <p className="loading-data">Just a sec....🤏</p>
-                }
-    
-                <div className="myBtn">
-                <button onClick={handleViewClick}>View Recipe</button>
-                <button><FaEdit/></button>
-                <button onClick={()=> handleDeleteClick(recipe.id)}>  <FaTrash /> </button>
-            
-                </div>
-            </div>
-        );
-    })
     return(
-        <>
         <div className="my-home">
             <div className="recipes-grid">
                 {recipes.map((recipe) => (

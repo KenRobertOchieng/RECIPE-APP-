@@ -39,13 +39,13 @@
       "ingredients": "gwgwgw",
       "instructions": "wgwgwgw",
       "image": "https://nakuru.mtaawangu.co.ke/_next/image?url=https%3A%2F%2Flocal.nation.co.ke%2Fresource%2Fblob%2F4347944%2F3c47c6d6c65599adbe8c331fbbc6a6f1%2Fsmocha-2-data.jpg&w=1920&q=75"
-      "id": "1a80",
+    },
+     { "id": "1a80",
       "name": "vkjkfgd",
       "description": "dfkjksd",
       "ingredients": "hhdh",
       "instructions": "shhsseu",
       "image": "https://i.pinimg.com/736x/58/4a/2e/584a2e8e607780fdec1fd74eabcfc114.jpg"
->>
     },
     {
       "id": "3d2c",
@@ -78,7 +78,8 @@
       "ingredients": "water and flour",
       "instructions": "boil water and put unga inside",
       "image": "https://bakinghermann.com/wp-content/uploads/2024/05/Ugali-3-scaled.jpg"
-      "id": "fd6f",
+    },
+      {"id": "fd6f",
       "name": "fhhpiaih",
       "description": "aiiphfiaoad",
       "ingredients": "ajhijad",
