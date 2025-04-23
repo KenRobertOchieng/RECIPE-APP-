@@ -1,5 +1,4 @@
 // import React from "react"
-import { FaTrash } from "react-icons/fa"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { FaTrash, FaEdit } from "react-icons/fa";
@@ -49,7 +48,7 @@ function Home({recipes, setRecipes}){
     
                 <div className="myBtn">
                 <button onClick={handleViewClick}>View Recipe</button>
-                <button>Edit Recipe</button>
+                <button><FaEdit/></button>
                 <button onClick={()=> handleDeleteClick(recipe.id)}>  <FaTrash /> </button>
             
                 </div>
@@ -70,6 +69,3 @@ function Home({recipes, setRecipes}){
 
 
 export default Home;
-
-
-// Ken shika hii

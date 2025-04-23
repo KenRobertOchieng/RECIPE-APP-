@@ -56,7 +56,7 @@ function RecipeForm({ taskAdd }) {
                 </div>
                 <div className="form-group">
                     <label htmlFor="description">Description:</label>
-                    <input
+                    <textarea
                         type="text"
                         id="description"
                         placeholder="Recipe description..."
@@ -76,7 +76,7 @@ function RecipeForm({ taskAdd }) {
                 </div>
                 <div className="form-group">
                     <label htmlFor="instructions">Instructions:</label>
-                    <input
+                    <textarea
                         type="text"
                         id="instructions"
                         placeholder="Recipe instructions..."
@@ -101,6 +101,3 @@ function RecipeForm({ taskAdd }) {
 }
 
 export default RecipeForm;
-
-
-// Ken shika hii
