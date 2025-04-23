@@ -191,4 +191,10 @@ footer > div:last-child a:hover {
   border-color: #f4f4f4;
   background-color: #555;
 }
+.add-button:hover {
+    background-color: #ffcc42;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
 
