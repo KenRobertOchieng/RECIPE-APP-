@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
+import {  FaEdit } from "react-icons/fa";
+
+
 function EditRecipe() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -88,7 +91,7 @@ function EditRecipe() {
           value={recipe.image}
           onChange={handleChange}
         />
-        <button type="submit">Edit</button>
+        <button type="submit"><FaEdit/></button>
       </form>
     </div>
   );
