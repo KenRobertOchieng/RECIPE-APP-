@@ -44,19 +44,18 @@ function Home({recipes, setRecipes}){
               {recipe.description}
             </p>
 
-            {loading === recipe.id && (
-              <p className="loading-data">Just a sec....🤏</p>
-            )}
-
-            <div className="myBtn">
-              <button onClick={handleViewClick}>View Recipe</button>
-              <button><FaEdit/></button>
-              <button onClick={() => handleDeleteClick(recipe.id)}>
-                {" "}
-                <FaTrash />{" "}
-              </button>
+               {loading===recipe.id
+                &&
+                <p className="loading-data">Just a sec....🤏</p>
+                }
+    
+                <div className="myBtn">
+                <button onClick={handleViewClick}>View Recipe</button>
+                <button><FaEdit/></button>
+                <button onClick={()=> handleDeleteClick(recipe.id)}>  <FaTrash /> </button>
+            
+                </div>
             </div>
-          </div>
         );
     })
     return(
