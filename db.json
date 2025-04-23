@@ -25,12 +25,27 @@
       "image": "/summer_veggies.jpeg"
     },
     {
+      "id": "5",
+      "name": "Classic Pancakes",
+      "description": "Fluffy breakfast pancakes perfect with syrup or fruit.",
+      "ingredients": "Flour, milk, eggs, sugar, baking powder, butter, salt",
+      "instructions": "Mix ingredients into a batter, cook on a hot pan until golden brown.",
+      "image": "/fluffy_pancake.jpeg"
+    },
+    {
+      "id": "abc1",
+      "name": "qwgfqwgg",
+      "description": "wgwgwg",
+      "ingredients": "gwgwgw",
+      "instructions": "wgwgwgw",
+      "image": "https://nakuru.mtaawangu.co.ke/_next/image?url=https%3A%2F%2Flocal.nation.co.ke%2Fresource%2Fblob%2F4347944%2F3c47c6d6c65599adbe8c331fbbc6a6f1%2Fsmocha-2-data.jpg&w=1920&q=75"
       "id": "1a80",
       "name": "vkjkfgd",
       "description": "dfkjksd",
       "ingredients": "hhdh",
       "instructions": "shhsseu",
       "image": "https://i.pinimg.com/736x/58/4a/2e/584a2e8e607780fdec1fd74eabcfc114.jpg"
+>>
     },
     {
       "id": "3d2c",
@@ -41,6 +56,28 @@
       "image": "https://i.pinimg.com/236x/ec/b7/5d/ecb75df66917c62cb1261e3d6eb54cda.jpg"
     },
     {
+      "id": "d830",
+      "name": "Mukimo",
+      "description": "yum yum yum",
+      "ingredients": "tamu",
+      "instructions": "1 2 3 tamu",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWVULm4WMvnLVsD3MKVdPrSTSiN5MnKoeffSGj4ivnr0E_F6cMwEgqOuGZyXeAwSPERP-Z6XTgfIfE4aFAWk2hMn_QSWCOwA5WcbWCa8"
+    },
+    {
+      "id": "8023",
+      "name": "Ugali",
+      "description": "cooked Flour ",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "6299",
+      "name": "Ugali",
+      "description": "cooked",
+      "ingredients": "water and flour",
+      "instructions": "boil water and put unga inside",
+      "image": "https://bakinghermann.com/wp-content/uploads/2024/05/Ugali-3-scaled.jpg"
       "id": "fd6f",
       "name": "fhhpiaih",
       "description": "aiiphfiaoad",
