@@ -1,4 +1,4 @@
-
+import React from "react"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { FaTrash, FaEdit } from "react-icons/fa";
@@ -13,7 +13,7 @@ function Home({recipes, setRecipes}){
             setloading(recipe.id)
             setTimeout(()=>{
                 navigate(`/recipes/${recipe.id}`,{state:recipe})
-            },1000)
+            },2000)
         };
         const handleDeleteClick = (id) => {
             const confirmDelete = window.confirm(`Are you sure you want to delete ${recipe.name}?`);
@@ -25,7 +25,6 @@ function Home({recipes, setRecipes}){
             })
             .then(response => {
                 if (response.ok) {
-                    // Update the local state to remove the deleted recipe
                     setRecipes(prevRecipes => prevRecipes.filter(recipe => recipe.id !== id));
                     console.log(`Recipe with ID ${id} deleted successfully.`);
                 } else {
@@ -36,31 +35,24 @@ function Home({recipes, setRecipes}){
                 console.error('Error deleting recipe:', error);
             });
         };
-        return (
-          <div key={recipe.id} className="main-section" >
-            <img src={recipe.image} alt={recipe.name} onClick={handleViewClick} style={{cursor:'pointer'}} />
-            <h1>{recipe.name}</h1>
-            {/* <p>
-              <span>Description: </span>
-              {recipe.description}
-            </p> */}
+        return(
+            <div key={recipe.id} className="main-section">
+                <h1>{recipe.name}</h1>
+                <img src={recipe.image} alt={recipe.name}/>
+                <p><span>Description: </span>{recipe.description}</p>
 
-            {loading === recipe.id && (
-              <p className="loading-data">Just a sec....🤏</p>
-            )}
-
-            <div className="myBtn">
-
-              <button onClick={() => navigate(`/edit/${recipe.id}`)}>
-                <FaEdit className="edit"/>
-              </button>
-
-              
-              <button onClick={() => handleDeleteClick(recipe.id)}>
-                <FaTrash className="trash"/>
-              </button>
+               {loading===recipe.id
+                &&
+                <p className="loading-data">Just a sec....🤏</p>
+                }
+    
+                <div className="myBtn">
+                <button onClick={handleViewClick}>View Recipe</button>
+                <button> <FaEdit/> </button>
+                <button onClick={()=> handleDeleteClick(recipe.id)}>  <FaTrash /> </button>
+            
+                </div>
             </div>
-          </div>
         );
     })
     return(
@@ -74,4 +66,9 @@ function Home({recipes, setRecipes}){
             </>    
             )
 }
-export default Home
+
+
+export default Home;
+
+
+// Ken shika hii
