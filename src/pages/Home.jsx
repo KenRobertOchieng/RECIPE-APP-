@@ -37,6 +37,22 @@ function Home({ recipes, setRecipes }) {
     };
 
     return (
+               {loading===recipe.id
+                &&
+                <p className="loading-data">Just a sec....🤏</p>
+                }
+    
+                <div className="myBtn">
+                <button onClick={handleViewClick}>View Recipe</button>
+                <button><FaEdit/></button>
+                <button onClick={()=> handleDeleteClick(recipe.id)}>  <FaTrash /> </button>
+            
+                </div>
+            </div>
+        );
+    })
+    return(
+        <>
         <div className="my-home">
             <div className="recipes-grid">
                 {recipes.map((recipe) => (
