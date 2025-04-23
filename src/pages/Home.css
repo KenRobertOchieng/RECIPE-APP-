@@ -4,7 +4,7 @@
 
 .recipes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust minmax for card width */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 20px;
 }
 
@@ -28,7 +28,7 @@
     width: 100%;
     height: auto;
     display: block;
-    aspect-ratio: 16 / 9; /* Adjust as needed */
+    aspect-ratio: 16 / 9; 
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
@@ -92,7 +92,7 @@
 }
 
 .like-icon {
-    color: #e44d26; /* Heart color */
+    color: #e44d26;
     margin-right: 5px;
 }
 
@@ -124,4 +124,3 @@
     font-size: 0.9em;
 }
 
-/* Ken shika hii */
