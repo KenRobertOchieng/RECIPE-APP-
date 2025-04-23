@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaTrash, FaEdit, FaHeart } from "react-icons/fa"; // Import icons
+import { FaTrash, FaEdit } from "react-icons/fa";
 import Footer from "../components/Footer";
-import "./Home.css"; // Create and import Home.css for component-specific styles
+import "./Home.css";
 
 function Home({ recipes, setRecipes }) {
-    const [loading, setloading] = useState('');
-    const navigate = useNavigate();
+  const [loading, setloading] = useState('');
+  const navigate = useNavigate();
 
-    const handleViewClick = (recipe) => {
-        setloading(recipe.id);
-        setTimeout(() => {
-            navigate(`/recipes/${recipe.id}`, { state: recipe });
-        }, 4000);
-    };
+  const handleViewClick = (recipe) => {
+    setloading(recipe.id);
+    setTimeout(() => {
+      navigate(`/recipes/${recipe.id}`, { state: recipe });
+    }, 4000);
+  };
 
     const handleDeleteClick = (id) => {
         const confirmDelete = window.confirm(`Are you sure you want to delete ${recipes.find(r => r.id === id)?.name}?`);
@@ -71,5 +71,3 @@ function Home({ recipes, setRecipes }) {
 }
 
 export default Home;
-
-

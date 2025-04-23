@@ -2,15 +2,23 @@
   "recipes": [
     {
       "id": "1",
-      "name": "Beef Stew",
+      "name": "githeri",
       "description": "Tender beef simmered with carrots and potatoes.",
       "ingredients": "Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
       "instructions": "Brown beef, add chopped veggies, simmer until soft and flavorful.",
       "image": "/beef_stew.jpeg"
     },
     {
+      "id": "4",
+      "name": "Luo-Style Fried Tilapia",
+      "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
+      "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
+      "instructions": "Clean and score the fish. Marinate with salt, garlic, and lemon. Deep-fry until golden brown. Serve with ugali and fried sukuma wiki.",
+      "image": "/fish_fry.jpeg"
+    },
+    {
       "id": "2",
-      "name": "Mango juice",
+      "name": "Mango Smoothie",
       "description": "Refreshing tropical drink for hot days.",
       "ingredients": "Ripe mangoes, yogurt, honey, ice cubes",
       "instructions": "Blend all ingredients until smooth. Serve chilled.",
@@ -64,19 +72,27 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWVULm4WMvnLVsD3MKVdPrSTSiN5MnKoeffSGj4ivnr0E_F6cMwEgqOuGZyXeAwSPERP-Z6XTgfIfE4aFAWk2hMn_QSWCOwA5WcbWCa8"
     },
     {
-      "id": "8023",
-      "name": "Ugali",
-      "description": "cooked Flour ",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
+      "id": "65fa",
+      "name": "cfvgdf",
+      "description": "vfgbghb",
+      "ingredients": "bgrferfge",
+      "instructions": "rgrhbnhbn",
+      "image": "https://bakinghermann.com/wp-content/uploads/2024/05/Ugali-3-scaled.jpg"
     },
     {
-      "id": "6299",
-      "name": "Ugali",
-      "description": "cooked",
-      "ingredients": "water and flour",
-      "instructions": "boil water and put unga inside",
+      "id": "cc28",
+      "name": "gvwgvw",
+      "description": "wvwhbhbn",
+      "ingredients": "whbb",
+      "instructions": "bsvbhbwe",
+      "image": "https://bakinghermann.com/wp-content/uploads/2024/05/Ugali-3-scaled.jpg"
+    },
+    {
+      "id": "c438",
+      "name": "fqwf",
+      "description": "fqfqfqf",
+      "ingredients": "fqfqfavg",
+      "instructions": "gwggwgwg",
       "image": "https://bakinghermann.com/wp-content/uploads/2024/05/Ugali-3-scaled.jpg"
     },
       {"id": "fd6f",
@@ -86,6 +102,5 @@
       "instructions": "ahiohad",
       "image": "https://i.pinimg.com/236x/d8/8e/b3/d88eb35eaa368c8a198c2aee47176709.jpg"
     }
-    
   ]
 }
