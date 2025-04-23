@@ -62,7 +62,7 @@ function EditRecipe() {
         />
         <input
           type="text"
-          name="description"
+          name="textArea"
           placeholder="Description..."
           value={recipe.description}
           onChange={handleChange}
@@ -76,7 +76,7 @@ function EditRecipe() {
         />
         <input
           type="text"
-          name="instructions"
+          name="textArea"
           placeholder="Instructions..."
           value={recipe.instructions}
           onChange={handleChange}
