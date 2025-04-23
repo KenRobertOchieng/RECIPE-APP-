@@ -41,14 +41,6 @@
       "image": "/fluffy_pancake.jpeg"
     },
     {
-      "id": "f3a9",
-      "name": "hjfkae",
-      "description": "adjjfa",
-      "ingredients": "aknaf",
-      "instructions": "anfa",
-      "image": "https://i.pinimg.com/236x/96/4f/45/964f451f7cfa207d3c82cb8ba690c521.jpg"
-    },
-    {
       "id": "abc1",
       "name": "qwgfqwgg",
       "description": "wgwgwg",
@@ -71,6 +63,22 @@
       "ingredients": "tamu",
       "instructions": "1 2 3 tamu",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWVULm4WMvnLVsD3MKVdPrSTSiN5MnKoeffSGj4ivnr0E_F6cMwEgqOuGZyXeAwSPERP-Z6XTgfIfE4aFAWk2hMn_QSWCOwA5WcbWCa8"
+    },
+    {
+      "id": "8023",
+      "name": "Ugali",
+      "description": "cooked Flour ",
+      "ingredients": "",
+      "instructions": "",
+      "image": ""
+    },
+    {
+      "id": "6299",
+      "name": "Ugali",
+      "description": "cooked",
+      "ingredients": "water and flour",
+      "instructions": "boil water and put unga inside",
+      "image": "https://bakinghermann.com/wp-content/uploads/2024/05/Ugali-3-scaled.jpg"
     }
   ]
 }
