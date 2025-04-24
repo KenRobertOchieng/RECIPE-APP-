@@ -110,17 +110,77 @@ p{
 /* this is for recipe form*/
 
 .my-add-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 40px;
-    /* background-color: #f9f9f9; */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 10);
-    font-family: Arial, sans-serif;
-    background-image: url("/cake.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 74%;
+  background-image: url('public/cake.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+  backdrop-filter: blur(5px);
+}
+
+.my-add-container h2 {
+  font-family: 'Harper Bold', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.add-recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  height: 40px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  /* border-color: #ffcc42; */
+  outline: none;
+}
+
+.add-button {
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.add-button:hover {
+background-color: rgba(0, 200, 0, 0.7);
+  color: #222;
+  transform: translateY(-2px);
 }
 
 /* adding custom font  */
@@ -238,10 +298,9 @@ footer > div:last-child a {
   border: 1px solid #555;
   border-radius: 4px;
 }
-
-footer > div:last-child a:hover {
-  border-color: #f4f4f4;
-  background-color: #555;
+.add-button:hover {
+    background-color: #ffcc42;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
   .my-edit {
