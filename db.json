@@ -26,52 +26,37 @@
     },
     {
       "id": "3",
-      "name": "Vegetable Stir-Fry",
+      "name": "",
       "description": "Colorful, crunchy veggies stir-fried in soy sauce.",
-      "ingredients": "Bell peppers, broccoli, carrots, soy sauce, garlic, sesame oil",
+      "ingredients": "",
       "instructions": "Stir-fry veggies on high heat for 5–7 mins with sauce.",
-      "image": "/summer_veggies.jpeg"
+      "image": "",
+      "textArea": "Stir-fry veggies on high heat for 5–7 mins with sauce"
     },
     {
-      "id": "5",
-      "name": "Classic Pancakes",
-      "description": "Fluffy breakfast pancakes perfect with syrup or fruit.",
-      "ingredients": "Flour, milk, eggs, sugar, baking powder, butter, salt",
-      "instructions": "Mix ingredients into a batter, cook on a hot pan until golden brown.",
-      "image": "/fluffy_pancake.jpeg"
+      "id": "1a80",
+      "name": "vkjkfgd",
+      "description": "dfkjksd",
+      "ingredients": "hhdh",
+      "instructions": "shhsseu",
+      "image": "https://i.pinimg.com/736x/58/4a/2e/584a2e8e607780fdec1fd74eabcfc114.jpg",
+      "textArea": "dfkjks"
     },
     {
-      "id": "abc1",
-      "name": "chapo",
-      "description": "wgwgwg",
-      "ingredients": "gwgwgw",
-      "instructions": "wgwgwgw",
-      "image": "https://nakuru.mtaawangu.co.ke/_next/image?url=https%3A%2F%2Flocal.nation.co.ke%2Fresource%2Fblob%2F4347944%2F3c47c6d6c65599adbe8c331fbbc6a6f1%2Fsmocha-2-data.jpg&w=1920&q=75"
+      "id": "3d2c",
+      "name": "dskaj",
+      "description": "ahjhla",
+      "ingredients": "anmnkaj",
+      "instructions": "alnklansdf",
+      "image": "https://i.pinimg.com/236x/ec/b7/5d/ecb75df66917c62cb1261e3d6eb54cda.jpg"
     },
     {
-      "id": "891b",
-      "name": "rice",
-      "description": "df;mkfs",
-      "ingredients": "smkl;fs",
-      "instructions": "sk;nks",
-      "image": "https://i.pinimg.com/474x/e7/2f/92/e72f9245e8d169462626e578abe5a1cb.jpg",
-      "textArea": "sk;nk"
-    },
-    {
-      "id": "325b",
-      "name": "chicken",
-      "description": "kaj;kla",
-      "ingredients": "akjjka",
-      "instructions": "lkjakdljf",
-      "image": "https://i.pinimg.com/236x/4e/62/43/4e624319548e7905615c82160510a82d.jpg"
-    },
-    {
-      "id": "2952",
-      "name": "flakjfds",
-      "description": "ankal;",
-      "ingredients": "a,m.fka",
-      "instructions": "an;fa",
-      "image": "https://i.pinimg.com/474x/e7/2f/92/e72f9245e8d169462626e578abe5a1cb.jpg"
+      "id": "fd6f",
+      "name": "fhhpiaih",
+      "description": "aiiphfiaoad",
+      "ingredients": "ajhijad",
+      "instructions": "ahiohad",
+      "image": "https://i.pinimg.com/236x/d8/8e/b3/d88eb35eaa368c8a198c2aee47176709.jpg"
     }
   ]
 }
