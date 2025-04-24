@@ -20,7 +20,7 @@ function Home({ recipes, setRecipes }) {
         if (!confirmDelete) {
             return;
         }
-        fetch(`http://localhost:3000/recipes/${id}`, {
+        fetch(`https://recipe-peach-one.vercel.app/recipes/${id}`, {
             method: 'DELETE',
         })
             .then(response => {

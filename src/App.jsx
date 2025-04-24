@@ -11,7 +11,7 @@ function App() {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/recipes")
+    fetch("https://recipe-peach-one.vercel.app/")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

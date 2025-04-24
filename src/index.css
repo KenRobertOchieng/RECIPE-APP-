@@ -330,11 +330,13 @@ footer > div:last-child a {
   }
   
   .my-edit input[type="text"] {
+    gap: 20px;
+    height: 30px;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 15px;
   }
   
   .my-edit input[type="text"]::placeholder {
@@ -344,11 +346,12 @@ footer > div:last-child a {
   .my-edit input[name="textArea"] { /* Target the description and instructions inputs */
     padding: 0px;
     margin-bottom: 15px;
+    /* margin: 10px; */
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
-    min-height: 80px; /* Provide some initial height for multi-line input */
-    resize: vertical; /* Allow vertical resizing */
+    font-size: 30px;
+    min-height: 150px; /* Provide some initial height for multi-line input */
+    /* resize: vertical; Allow vertical resizing */
   }
   
   .my-edit button {
