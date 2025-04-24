@@ -1,0 +1,78 @@
+/* RecipeDetails.css */
+
+.recipe-details-container {
+    font-family: 'Melon', sans-serif; /* Ensure your font is applied */
+    background-image: url('/Bakery pattern consisting of baking accessories and food line style brown color.jpeg');
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px; /* Space between heading and image */
+  }
+  
+  .recipe-header h1 {
+    font-size: 2.5em;
+   
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+    flex-grow: 1; /* Allows the heading to take up available space */
+  }
+  
+  .recipe-image {
+    width: 350px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  .recipe-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px;
+  }
+  
+  .details-section {
+    background-color: rgb(255, 231, 170);
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+  }
+  
+  .info-label {
+    font-weight: bold;
+    color: #555;
+    margin-right: 5px;
+    font-size: 1.1em;
+  }
+  
+  .details-section p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Ensure your global styles don't interfere too much */
+  body {
+    font-family: sans-serif; /* Fallback font */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* A softer background for the body */
+    /* height: auto; Remove fixed height to allow content to grow */
+  }
+  
+  @font-face {
+    font-family: 'Melon';
+    src: url('/Melon Camp.otf') format('opentype');
+    /* Add font-weight and font-style if applicable */
+  }

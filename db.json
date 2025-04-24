@@ -2,11 +2,19 @@
   "recipes": [
     {
       "id": "1",
-      "name": "Beef Stew",
+      "name": "githeri",
       "description": "Tender beef simmered with carrots and potatoes.",
       "ingredients": "Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
       "instructions": "Brown beef, add chopped veggies, simmer until soft and flavorful.",
       "image": "/beef_stew.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Luo-Style Fried Tilapia",
+      "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
+      "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
+      "instructions": "Clean and score the fish. Marinate with salt, garlic, and lemon. Deep-fry until golden brown. Serve with ugali and fried sukuma wiki.",
+      "image": "/fish_fry.jpeg"
     },
     {
       "id": "4",
@@ -73,28 +81,19 @@
       "image": ""
     },
     {
-      "id": "8218",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "3af5",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
-    },
-    {
-      "id": "fafd",
-      "name": "",
-      "description": "",
-      "ingredients": "",
-      "instructions": "",
-      "image": ""
+      "id": "abc1",
+      "name": "qwgfqwgg",
+      "description": "wgwgwg",
+      "ingredients": "gwgwgw",
+      "instructions": "wgwgwgw",
+      "image": "https://nakuru.mtaawangu.co.ke/_next/image?url=https%3A%2F%2Flocal.nation.co.ke%2Fresource%2Fblob%2F4347944%2F3c47c6d6c65599adbe8c331fbbc6a6f1%2Fsmocha-2-data.jpg&w=1920&q=75"
+      "id": "1a80",
+      "name": "vkjkfgd",
+      "description": "dfkjksd",
+      "ingredients": "hhdh",
+      "instructions": "shhsseu",
+      "image": "https://i.pinimg.com/736x/58/4a/2e/584a2e8e607780fdec1fd74eabcfc114.jpg"
+>
     },
     {
       "id": "4e6c",

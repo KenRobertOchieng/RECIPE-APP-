@@ -1,18 +1,17 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaTrash, FaEdit } from "react-icons/fa"; // Import icons
+import { FaTrash, FaEdit, FaHeart } from "react-icons/fa"; // Import icons
 import Footer from "../components/Footer";
-import "./Home.css"; // Create and import Home.css for component-specific styles
+import "./Home.css";
 
 function Home({ recipes, setRecipes }) {
-    const [loading, setLoading] = useState(null); // Use null for better clarity
+    const [loading, setloading] = useState('');
     const navigate = useNavigate();
 
     const handleViewClick = (recipe) => {
-        setLoading(recipe.id);
+        setloading(recipe.id);
         setTimeout(() => {
             navigate(`/recipes/${recipe.id}`, { state: recipe });
-            setLoading(null); // Reset loading state after navigation
         }, 4000);
     };
 
@@ -37,7 +36,10 @@ function Home({ recipes, setRecipes }) {
             });
     };
 
-    return (
+
+    
+    return(
+        
         <div className="my-home">
             <div className="recipes-grid">
                 {recipes.map((recipe) => (
