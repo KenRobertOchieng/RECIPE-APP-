@@ -4,7 +4,7 @@ function Nav(){
     return(
         <>
         <nav>
-                <img src="public/Chef With Thumbs Up, Illustration, Element, Thumbs Up PNG Transparent Image and Clipart for Free Download.jpeg" alt="" />
+                <img src="/Chef With Thumbs Up, Illustration, Element, Thumbs Up PNG Transparent Image and Clipart for Free Download.jpeg" alt="" />
             <ul>
                 <li>
                     <Link to={'/'}>Home</Link>

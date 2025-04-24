@@ -64,7 +64,7 @@ function EditRecipe() {
           value={recipe.name}
           onChange={handleChange}
         />
-        <input
+        <textarea
           type="text"
           name="textArea"
           placeholder="Description..."
@@ -78,7 +78,7 @@ function EditRecipe() {
           value={recipe.ingredients}
           onChange={handleChange}
         />
-        <input
+        <textarea
           type="text"
           name="textArea"
           placeholder="Instructions..."

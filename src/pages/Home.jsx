@@ -12,7 +12,7 @@ function Home({ recipes, setRecipes }) {
     setloading(recipe.id);
     setTimeout(() => {
       navigate(`/recipes/${recipe.id}`, { state: recipe });
-    }, 4000);
+    }, 1000);
   };
 
   const handleDeleteClick = (id) => {
