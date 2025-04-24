@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import {  FaEdit } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 function EditRecipe() {
   const { id } = useParams();
@@ -49,7 +51,9 @@ function EditRecipe() {
         ...</p>;
   if (!recipe) return <p>Edit Recipe not found.</p>;
 
+  
   return (
+    <>
     <div className="my-edit">
       <h2>Edit Recipe</h2>
       <form onSubmit={handleSubmit}>
@@ -62,7 +66,7 @@ function EditRecipe() {
         />
         <input
           type="text"
-          name="description"
+          name="textArea"
           placeholder="Description..."
           value={recipe.description}
           onChange={handleChange}
@@ -76,11 +80,12 @@ function EditRecipe() {
         />
         <input
           type="text"
-          name="instructions"
+          name="textArea"
           placeholder="Instructions..."
           value={recipe.instructions}
           onChange={handleChange}
         />
+        
         <input
           type="text"
           name="image"
@@ -88,10 +93,17 @@ function EditRecipe() {
           value={recipe.image}
           onChange={handleChange}
         />
-        <button type="submit">Edit</button>
+        <button type="submit"><FaEdit/></button>
       </form>
+      
     </div>
+    <Footer/>
+    </>
+    
   );
+  
 }
+
+
 
 export default EditRecipe;

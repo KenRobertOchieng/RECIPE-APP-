@@ -2,7 +2,7 @@
   "recipes": [
     {
       "id": "1",
-      "name": "Beef Stew",
+      "name": "githeri",
       "description": "Tender beef simmered with carrots and potatoes.",
       "ingredients": "Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
       "instructions": "Brown beef, add chopped veggies, simmer until soft and flavorful.",
@@ -17,8 +17,16 @@
       "image": "/fish_fry.jpeg"
     },
     {
+      "id": "4",
+      "name": "Luo-Style Fried Tilapia",
+      "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
+      "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
+      "instructions": "Clean and score the fish. Marinate with salt, garlic, and lemon. Deep-fry until golden brown. Serve with ugali and fried sukuma wiki.",
+      "image": "/fish_fry.jpeg"
+    },
+    {
       "id": "2",
-      "name": "Mango juice",
+      "name": "Mango Smoothie",
       "description": "Refreshing tropical drink for hot days.",
       "ingredients": "Ripe mangoes, yogurt, honey, ice cubes",
       "instructions": "Blend all ingredients until smooth. Serve chilled.",
@@ -39,5 +47,22 @@
       "ingredients": "Flour, milk, eggs, sugar, baking powder, butter, salt",
       "instructions": "Mix ingredients into a batter, cook on a hot pan until golden brown.",
       "image": "/fluffy_pancake.jpeg"
+    },
+    {
+      "id": "6fdc",
+      "name": "Pilau",
+      "description": "uytfv",
+      "ingredients": "ygv",
+      "instructions": "uytf",
+      "image": "https://i.pinimg.com/236x/14/e9/68/14e968a0622c6d69a8e924d478201c6d.jpg"
+    },
+    {
+      "id": "e9b6",
+      "name": "Marciah Wairimu",
+      "description": "iuytredx",
+      "ingredients": "iuytrfd",
+      "instructions": "iuytfv",
+      "image": "https://i.pinimg.com/236x/14/e9/68/14e968a0622c6d69a8e924d478201c6d.jpg"
     }
-]}
+  ]
+}
