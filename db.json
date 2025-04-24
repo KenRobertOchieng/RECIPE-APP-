@@ -49,19 +49,28 @@
       "image": "https://nakuru.mtaawangu.co.ke/_next/image?url=https%3A%2F%2Flocal.nation.co.ke%2Fresource%2Fblob%2F4347944%2F3c47c6d6c65599adbe8c331fbbc6a6f1%2Fsmocha-2-data.jpg&w=1920&q=75"
     },
     {
-      "id": "d830",
-      "name": "Mokimo",
-      "description": "yum yum yum",
-      "ingredients": "tamu",
-      "instructions": "1 2 3 tamu",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWVULm4WMvnLVsD3MKVdPrSTSiN5MnKoeffSGj4ivnr0E_F6cMwEgqOuGZyXeAwSPERP-Z6XTgfIfE4aFAWk2hMn_QSWCOwA5WcbWCa8"
-    },
-    {
       "id": "891b",
-      "name": "fkjsfd",
+      "name": "rice",
       "description": "df;mkfs",
       "ingredients": "smkl;fs",
       "instructions": "sk;nks",
+      "image": "https://i.pinimg.com/474x/e7/2f/92/e72f9245e8d169462626e578abe5a1cb.jpg",
+      "textArea": "sk;nk"
+    },
+    {
+      "id": "325b",
+      "name": "chicken",
+      "description": "kaj;kla",
+      "ingredients": "akjjka",
+      "instructions": "lkjakdljf",
+      "image": "https://i.pinimg.com/236x/4e/62/43/4e624319548e7905615c82160510a82d.jpg"
+    },
+    {
+      "id": "2952",
+      "name": "flakjfds",
+      "description": "ankal;",
+      "ingredients": "a,m.fka",
+      "instructions": "an;fa",
       "image": "https://i.pinimg.com/474x/e7/2f/92/e72f9245e8d169462626e578abe5a1cb.jpg"
     }
   ]
