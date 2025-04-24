@@ -1,17 +1,18 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaTrash, FaEdit, FaHeart } from "react-icons/fa"; // Import icons
+import { FaTrash, FaEdit } from "react-icons/fa"; // Import icons
 import Footer from "../components/Footer";
 import "./Home.css"; // Create and import Home.css for component-specific styles
 
 function Home({ recipes, setRecipes }) {
-    const [loading, setloading] = useState('');
+    const [loading, setLoading] = useState(null); // Use null for better clarity
     const navigate = useNavigate();
 
     const handleViewClick = (recipe) => {
-        setloading(recipe.id);
+        setLoading(recipe.id);
         setTimeout(() => {
             navigate(`/recipes/${recipe.id}`, { state: recipe });
+            setLoading(null); // Reset loading state after navigation
         }, 4000);
     };
 
@@ -37,40 +38,40 @@ function Home({ recipes, setRecipes }) {
     };
 
     return (
-               {loading===recipe.id
-                &&
-                <p className="loading-data">Just a sec....🤏</p>
-                }
-    
-                <div className="myBtn">
-                <button onClick={handleViewClick}>View Recipe</button>
-                <button><FaEdit/></button>
-                <button onClick={()=> handleDeleteClick(recipe.id)}>  <FaTrash /> </button>
-            
-                </div>
-            </div>
-        );
-    })
-    return(
-        <>
         <div className="my-home">
             <div className="recipes-grid">
                 {recipes.map((recipe) => (
                     <div key={recipe.id} className="recipe-card">
-                        <div className="recipe-image-container" onClick={() => handleViewClick(recipe)} style={{ cursor: 'pointer' }}>
+                        <div
+                            className="recipe-image-container"
+                            onClick={() => handleViewClick(recipe)}
+                            style={{ cursor: 'pointer' }}
+                        >
                             <img src={recipe.image} alt={recipe.name} className="recipe-image" />
-                            {recipe.cookingTime && <div className="recipe-time">{recipe.cookingTime}</div>} {/* Assuming 'cookingTime' exists */}
+                            {recipe.cookingTime && (
+                                <div className="recipe-time">{recipe.cookingTime}</div>
+                            )}
                         </div>
                         <div className="recipe-details">
-                            {recipe.category && <p className="recipe-category">{recipe.category?.toUpperCase()}</p>} {/* Assuming 'category' exists */}
+                            {recipe.category && (
+                                <p className="recipe-category">{recipe.category?.toUpperCase()}</p>
+                            )}
                             <h3 className="recipe-title">{recipe.name}</h3>
-                            {recipe.author && <p className="recipe-author">Author: {recipe.author}</p>} {/* Assuming 'author' exists */}
+                            {recipe.author && (
+                                <p className="recipe-author">Author: {recipe.author}</p>
+                            )}
                             <div className="recipe-actions">
-                                                      <div className="admin-actions">
-                                    <button onClick={() => navigate(`/edit/${recipe.id}`)} aria-label="Edit">
+                                <div className="admin-actions">
+                                    <button
+                                        onClick={() => navigate(`/edit/${recipe.id}`)}
+                                        aria-label="Edit"
+                                    >
                                         <FaEdit className="edit-icon" />
                                     </button>
-                                    <button onClick={() => handleDeleteClick(recipe.id)} aria-label="Delete">
+                                    <button
+                                        onClick={() => handleDeleteClick(recipe.id)}
+                                        aria-label="Delete"
+                                    >
                                         <FaTrash className="delete-icon" />
                                     </button>
                                 </div>
@@ -88,5 +89,3 @@ function Home({ recipes, setRecipes }) {
 }
 
 export default Home;
-
-
