@@ -110,7 +110,7 @@ p{
 /* this is for recipe form*/
 
 .my-add-container {
-  background-image: url('public/cake.png');
+  background-image: url('/cake.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
