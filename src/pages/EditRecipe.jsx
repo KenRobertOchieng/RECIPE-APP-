@@ -10,7 +10,7 @@ function EditRecipe() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/recipes/${id}`)
+    fetch(`https://my-recipe-sooty.vercel.app/recipes/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setRecipe(data);
@@ -32,7 +32,7 @@ function EditRecipe() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch(`http://localhost:3000/recipes/${id}`, {
+    fetch(`https://my-recipe-sooty.vercel.app/recipes/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
