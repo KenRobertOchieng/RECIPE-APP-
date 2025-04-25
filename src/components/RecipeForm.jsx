@@ -18,7 +18,7 @@ function RecipeForm({ taskAdd }) {
       instructions: instructions,
       image: imageUrl
     };
-    fetch('http://localhost:3000/recipes', {
+    fetch('https://my-recipe-sooty.vercel.app/recipes/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
