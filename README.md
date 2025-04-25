@@ -42,3 +42,6 @@ A beautifully crafted React-based web application that allows users to **add**, 
 ```bash
 https://github.com/KenRobertOchieng/RECIPE-APP-.git
 cd recipe-app
+
+## Deployed link
+https://recipe-app--five.vercel.app/
