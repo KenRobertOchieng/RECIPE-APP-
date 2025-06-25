@@ -101,12 +101,6 @@ p{
     flex-direction: row;
     font-size: 30px;
 }
-/* .loading-data{ */
-    /* align-items: center; */
-/* } */
-
-
-
 /* this is for recipe form*/
 
 .my-add-container {
@@ -307,7 +301,6 @@ footer > div:last-child a {
     max-width: 600px;
     margin: 50px auto;
     padding: 40px;
-    /* background-color: #f9f9f9; */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 10);
     font-family: Arial, sans-serif;
@@ -341,14 +334,14 @@ footer > div:last-child a {
     color: #999;
   }
   
-  .my-edit input[name="textArea"] { /* Target the description and instructions inputs */
+  .my-edit input[name="textArea"] {
     padding: 0px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    min-height: 80px; /* Provide some initial height for multi-line input */
-    resize: vertical; /* Allow vertical resizing */
+    min-height: 80px; 
+    resize: vertical; 
   }
   
   .my-edit button {
@@ -366,7 +359,7 @@ footer > div:last-child a {
   }
   
   .my-edit button svg {
-    margin-right: 5px; /* Space between icon and text if you add text */
+    margin-right: 5px; 
   }
   
   .my-edit button:hover {
