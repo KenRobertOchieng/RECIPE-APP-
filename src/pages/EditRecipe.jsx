@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import {  FaEdit } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 function EditRecipe() {
   const { id } = useParams();
@@ -8,7 +10,7 @@ function EditRecipe() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/recipes/${id}`)
+    fetch(`https://my-recipe-sooty.vercel.app/recipes/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setRecipe(data);
@@ -30,7 +32,7 @@ function EditRecipe() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch(`http://localhost:3000/recipes/${id}`, {
+    fetch(`https://my-recipe-sooty.vercel.app/recipes/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -49,7 +51,9 @@ function EditRecipe() {
         ...</p>;
   if (!recipe) return <p>Edit Recipe not found.</p>;
 
+  
   return (
+    <>
     <div className="my-edit">
       <h2>Edit Recipe</h2>
       <form onSubmit={handleSubmit}>
@@ -60,9 +64,9 @@ function EditRecipe() {
           value={recipe.name}
           onChange={handleChange}
         />
-        <input
+        <textarea
           type="text"
-          name="description"
+          name="textArea"
           placeholder="Description..."
           value={recipe.description}
           onChange={handleChange}
@@ -74,13 +78,14 @@ function EditRecipe() {
           value={recipe.ingredients}
           onChange={handleChange}
         />
-        <input
+        <textarea
           type="text"
-          name="instructions"
+          name="textArea"
           placeholder="Instructions..."
           value={recipe.instructions}
           onChange={handleChange}
         />
+        
         <input
           type="text"
           name="image"
@@ -88,10 +93,17 @@ function EditRecipe() {
           value={recipe.image}
           onChange={handleChange}
         />
-        <button type="submit">Edit</button>
+        <button type="submit"><FaEdit/></button>
       </form>
+      
     </div>
+    <Footer/>
+    </>
+    
   );
+  
 }
+
+
 
 export default EditRecipe;

@@ -1,122 +1,373 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    font-family: 'Melon';
     margin: 0px;
     padding: 0px;
     background-color: wheat;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-}
+     height: 100vh; 
+ 
 
-img {
+}
+img{
+    margin-right: 280px;
     height: 150px;
     width: 165px;
 }
-
-.card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-}
-
-.section-1 {
-    width: 100%;
-}
-
-ul {
-    width: 100%;
-    display: flex;
-    justify-content: end;
+.section-1{
+    padding:0px;
+    height: 150px;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
-
-li {
+ul{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+li{
     font-size: 30px;
     margin: 35px;
     list-style: none;
 }
-
-li:hover {
+li:hover{
     border-radius: 5px;
     background-color: blue;
 }
-
-nav {
+nav{
     align-items: center;
     justify-content: end;
     display: flex;
     box-shadow: 0px 0px 20px;
-    background-color: white;
+    background-color:white;
     width: 100%;
-
 }
-nav img{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-left: 950px;
-}
-
-.my-details {
+.my-details{
     margin: 50px;
 }
-
-.my-add {
+.my-add{
     margin: 50px;
 }
-
-.my-edit {
+.my-edit{
     margin: 50px;
 }
-
-.my-home {
+.my-home{
     margin-bottom: 300px;
 
 }
-
-.main-section {
-    width: 300px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 0px;
-    background-color: #fdfdfd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
+.main-section{
+    margin: 0px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
-
-.main-section img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
+.main-section img{
+    box-shadow: 0px 0px 7px;
+    border-radius: 10px;
+    margin: 30px;
+    /* border: solid 2px; */
+    border: none;
+    height: 480px;
+    width: 480px;
 }
-
-.myBtn {
+.myBtn{
     gap: 20px;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
 }
-button{
+
+button {
+    color: white;
+    background-color: black;
     background: none;
     border: none;
     border-radius: 6px;
     font-size: 20px;
 }
-
-span {
+button:hover{
+    box-shadow: 0px 0px 60px;
+}
+span{
     color: blue;
     font-size: 33px;
 }
-
-p {
+p{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 30px;
 }
+/* this is for recipe form*/
+
+.my-add-container {
+  background-image: url('/cake.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+  backdrop-filter: blur(5px);
+}
+
+.my-add-container h2 {
+  font-family: 'Harper Bold', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.add-recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  height: 40px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  /* border-color: #ffcc42; */
+  outline: none;
+}
+
+.add-button {
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.add-button:hover {
+background-color: rgba(0, 200, 0, 0.7);
+  color: #222;
+  transform: translateY(-2px);
+}
+
+/* adding custom font  */
+
+@font-face {
+    font-family: 'Harper Bold';
+    src: url('/Harper-Bold Personal Use.otf') format('opentype'); 
+   
+}
+
+.trash {
+    color: red;
+    font-size: 39px;
+}
+
+.trash:hover {
+    font-size: 44px;
+}
+
+.view {
+    font-size: 40px;
+}
+
+.view:hover {
+    font-size: 45px;
+}
+footer {
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 20px;
+  text-align: center; 
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+footer > p { 
+  margin: 10px 0; 
+}
+
+footer > div { 
+  margin-top: 15px;
+}
+
+footer > div a {
+  color: #f4f4f4;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer > div a:hover {
+  text-decoration: underline;
+}
+
+footer > div:last-child { 
+  margin-top: 20px;
+}
+
+footer > div:last-child p {
+  margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px;
+    text-align: center; 
+    font-size: 0.9em;
+    margin-top: 20px;
+  }
+  
+  footer > p { 
+    margin: 10px 0; 
+  }
+  
+  footer > div { 
+    margin-top: 15px;
+  }
+  
+  footer > div a {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+  }
+  
+  footer > div:last-child { 
+    margin-top: 20px;
+  }
+  
+  footer > div:last-child p {
+    margin-bottom: 5px;
+  }
+  
+  footer > div:last-child a {
+    display: inline-block; 
+    margin: 5px 9.5px;
+    padding: 8px 12px;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+  
+  footer > div:last-child a:hover {
+    border-color: #f4f4f4;
+    background-color: #555;
+  }
+  
+/* this is for edit recipe styling */
+footer > div:last-child a {
+  display: inline-block; 
+  margin: 5px 9.5px;
+  padding: 8px 12px;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+.add-button:hover {
+    background-color: #ffcc42;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+  .my-edit {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 10);
+    font-family: Arial, sans-serif;
+    background-image: url("/Hanh Dam Hanoi from Hanoi, Vietnam.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 75%;
+}
+  
+  .my-edit h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .my-edit form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  
+  .my-edit input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .my-edit input[type="text"]::placeholder {
+    color: #999;
+  }
+  
+  .my-edit input[name="textArea"] {
+    padding: 0px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    min-height: 80px; 
+    resize: vertical; 
+  }
+  
+  .my-edit button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .my-edit button svg {
+    margin-right: 5px; 
+  }
+  
+  .my-edit button:hover {
+    background-color: #4cae4c;
+  }
+  
+  .my-edit p {
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+  }

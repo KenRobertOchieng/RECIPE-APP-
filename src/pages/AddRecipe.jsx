@@ -1,16 +1,19 @@
+import RecipeForm from "../components/RecipeForm";
+import Footer from "../components/Footer";
 
-import RecipeForm from "../components/RecipeForm"
-function AddRecipe(){
+function AddRecipe({ setRecipes }) {
+  const taskAdd = (addedRecipe) => {
+    setRecipes((previousTask) => [...previousTask, addedRecipe]);
+  };
 
-    const taskAdd=(addedRecipe)=>{
-        setrecipes((previousTask)=>[...previousTask,addedRecipe])
-      }
-      return(
-        <div>
-            <RecipeForm taskAdd={taskAdd} />
-        </div>
-      )
+  return (
+    <>
+    <div>
+      <RecipeForm taskAdd={taskAdd} />
+      </div>
+      <Footer />
+      </>
+  );
+}
 
-    }
-    export default AddRecipe
-
+export default AddRecipe;
