@@ -323,11 +323,13 @@ footer > div:last-child a {
   }
   
   .my-edit input[type="text"] {
+    gap: 20px;
+    height: 30px;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 15px;
   }
   
   .my-edit input[type="text"]::placeholder {
@@ -337,6 +339,7 @@ footer > div:last-child a {
   .my-edit input[name="textArea"] {
     padding: 0px;
     margin-bottom: 15px;
+    /* margin: 10px; */
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;

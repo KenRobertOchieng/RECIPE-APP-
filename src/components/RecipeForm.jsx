@@ -18,7 +18,11 @@ function RecipeForm({ taskAdd }) {
       instructions: instructions,
       image: imageUrl
     };
+<<<<<<< HEAD
+    fetch('https://recipe-peach-one.vercel.app/recipes', {
+=======
     fetch('https://my-recipe-sooty.vercel.app/recipes/', {
+>>>>>>> 85426ab82e53276e3d2df7779b017cb16fbe17b4
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

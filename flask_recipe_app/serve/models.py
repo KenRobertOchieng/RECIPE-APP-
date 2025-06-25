@@ -8,9 +8,10 @@ class Recipe(db.Model):
     description=db.Column(db.String,nullable=False)
     ingredients=db.Column(db.String,nullable=False)
     instructions=db.Column(db.String,nullable=False)
+    image=db.Column(db.String,nullable=True)
 
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    user=db.relationship('User',backpopulates='recipe')
+    user=db.relationship('User',back_populates='recipe')
 
     def __repr__(self):
         return f'<Recipe {self.id}, {self.name}, {self.description}, {self.ingredients}, {self.instructions}'  
@@ -22,7 +23,7 @@ class User(db.Model):
     name=db.Column(db.String)
     password=db.Column(db.String)
 
-    recipe=db.relationship('Recipe',backpopulates='user')
+    recipe=db.relationship('Recipe',back_populates='user')
 
     def __repr__(self):
         return f'<User {self.id}, {self.email}, {self.name}, {self.password}'

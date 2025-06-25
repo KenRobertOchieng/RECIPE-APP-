@@ -11,7 +11,7 @@ function App() {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch("https://my-recipe-sooty.vercel.app/recipes/")
+    fetch("https://recipe-peach-one.vercel.app/")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
