@@ -13,9 +13,9 @@ function Nav(){
                 <li>
                     <Link to={'/add'}>Add Recipe</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to={'/edit'}>Edit Recipe</Link>
-                </li>
+                </li> */}
             </ul>
         </nav>
         </>

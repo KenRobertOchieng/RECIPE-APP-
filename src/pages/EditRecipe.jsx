@@ -10,7 +10,11 @@ function EditRecipe() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+<<<<<<< HEAD
     fetch(`https://recipe-peach-one.vercel.app/recipes/${id}`)
+=======
+    fetch(`https://my-recipe-sooty.vercel.app/recipes/${id}`)
+>>>>>>> 85426ab82e53276e3d2df7779b017cb16fbe17b4
       .then((res) => res.json())
       .then((data) => {
         setRecipe(data);
@@ -32,8 +36,13 @@ function EditRecipe() {
 
   function handleSubmit(e) {
     e.preventDefault();
+<<<<<<< HEAD
     fetch(`https://recipe-peach-one.vercel.app/recipes/${id}`, {
       method: "PUT",
+=======
+    fetch(`https://my-recipe-sooty.vercel.app/recipes/${id}`, {
+      method: "PATCH",
+>>>>>>> 85426ab82e53276e3d2df7779b017cb16fbe17b4
       headers: {
         "Content-Type": "application/json",
       },

@@ -30,10 +30,7 @@ A beautifully crafted React-based web application that allows users to **add**, 
 ---
 ## Install Dependencies
 - ** npm install
-
---- 
-## Run Json-Server
--** json-server -watch db.json
+- ** npm install react-icons
 
 ## 📦 Setup Instructions
 
@@ -42,3 +39,8 @@ A beautifully crafted React-based web application that allows users to **add**, 
 ```bash
 https://github.com/KenRobertOchieng/RECIPE-APP-.git
 cd recipe-app
+
+## Deployed link
+https://recipe-app--five.vercel.app/
+## Deploy for json-server
+    https://my-recipe-sooty.vercel.app/recipes/

@@ -1,4 +1,5 @@
 import RecipeForm from "../components/RecipeForm";
+import Footer from "../components/Footer";
 
 function AddRecipe({ setRecipes }) {
   const taskAdd = (addedRecipe) => {
@@ -6,9 +7,12 @@ function AddRecipe({ setRecipes }) {
   };
 
   return (
+    <>
     <div>
       <RecipeForm taskAdd={taskAdd} />
-    </div>
+      </div>
+      <Footer />
+      </>
   );
 }
 

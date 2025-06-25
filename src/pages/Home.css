@@ -110,11 +110,11 @@
 }
 
 .edit-icon {
-    color: blue;
+    color: brown;
 }
 
 .delete-icon {
-    color: red;
+    color: goldenrod;
 }
 
 .loading-data {
@@ -123,3 +123,74 @@
     color: #888;
     font-size: 0.9em;
 }
+.my-edit {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.my-edit h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.my-edit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-edit input[type="text"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.my-edit input[type="text"]::placeholder {
+  color: #999;
+}
+
+.my-edit input[name="textArea"] { /* Target the description and instructions inputs */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  min-height: 80px; /* Provide some initial height for multi-line input */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.my-edit button {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-edit button svg {
+  margin-right: 5px; /* Space between icon and text if you add text */
+}
+
+.my-edit button:hover {
+  background-color: #4cae4c;
+}
+
+.my-edit p {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
+
