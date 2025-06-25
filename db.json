@@ -10,6 +10,14 @@
     },
     {
       "id": "4",
+      "name": "Luo-Style Fried Tilapia",
+      "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
+      "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
+      "instructions": "Clean and score the fish. Marinate with salt, garlic, and lemon. Deep-fry until golden brown. Serve with ugali and fried sukuma wiki.",
+      "image": "/fish_fry.jpeg"
+    },
+    {
+      "id": "4",
       "name": "Luo-Style Fried ",
       "description": "Whole tilapia fish deep-fried and served with ugali and sautéed greens.",
       "ingredients": "Whole tilapia, salt, lemon juice, garlic, cooking oil, sukuma wiki, maize flour",
