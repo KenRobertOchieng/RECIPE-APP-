@@ -1,11 +1,17 @@
-from flask import Blueprint, request, jsonify
-from serve.models import db, Recipe, User
-from flask_jwt_extended import jwt_required
+from flask import Blueprint, request, jsonify,abort
+from serve.models import db, Recipe,User
+from flask_jwt_extended import get_jwt_identity , jwt_required
 
 routes = Blueprint('routes', __name__)
 
+@routes.route('/users', methods=['GET'])
+def get_users():
+   
+   users=[user.to_dict() for user in User.query.all()] 
+ 
+   return jsonify(users), 200
+
 @routes.route('/recipes', methods=['GET'])
-@jwt_required
 def get_recipes():
     recipes = Recipe.query.all()
     recipe_list = [
@@ -24,8 +30,9 @@ def get_recipes():
 
 
 @routes.route('/recipes', methods=['POST'])
-@jwt_required
+@jwt_required()
 def create_recipe():
+    user_id=get_jwt_identity()
     data = request.get_json()
     try:
         print("Incoming data:", data)  
@@ -36,7 +43,7 @@ def create_recipe():
             ingredients=data['ingredients'],
             instructions=data['instructions'],
             image=data.get('image'),  
-            user_id=data['user_id']
+            user_id=user_id
         )
 
         db.session.add(new_recipe)
@@ -49,14 +56,17 @@ def create_recipe():
         print(" Error occurred:", e) 
         return jsonify({"error": str(e)}), 400
 
-
 @routes.route('/recipes/<int:id>', methods=['DELETE'])
-@jwt_required
+@jwt_required()
 def delete_recipe(id):
-    recipe = Recipe.query.get(id)
-    if recipe:
-        db.session.delete(recipe)
-        db.session.commit()
-        return jsonify({"message": "Recipe deleted successfully."}), 200
-    else:
-        return jsonify({"error": "Recipe not found."}), 404
+    recipe_id=get_jwt_identity()
+    recipe = Recipe.query.get_or_404(id)
+
+    if recipe.user_id != recipe_id:
+         abort(403, description="Forbidden")
+
+    db.session.delete(recipe)
+    db.session.commit()
+
+    return jsonify({"message":"successfully deleted"}),200
+

@@ -1,16 +1,20 @@
 from werkzeug.security import generate_password_hash
+from flask import Blueprint
 from serve.extentions import db
-from serve.extentions import app
+from serve.app import app
 from flask import request, jsonify
-from serve.extentions import User
+from serve.models import User
 
-@app.route('/register', methods=['POST'])
+auth_bp = Blueprint('auth', __name__, url_prefix='/register')
+login_bp = Blueprint('login', __name__, url_prefix='/login')
+
+@auth_bp.route('', methods=['POST'])
 def register():
     data = request.get_json()
     hashed_pw = generate_password_hash(data['password'])
 
     # creation of a new user
-    user = User(name=data['name'], email=data['email'], password=hashed_pw)
+    user = User(email=data['email'], name=data['name'], password=hashed_pw)
     db.session.add(user)
     db.session.commit()
     return jsonify(message="User created"), 201
@@ -18,7 +22,7 @@ def register():
 from flask_jwt_extended import create_access_token
 from werkzeug.security import check_password_hash
 
-@app.route('/login', methods=['POST'])
+@login_bp.route('', methods=['POST'])
 def login():
     data = request.get_json()
     user = User.query.filter_by(email=data['email']).first()

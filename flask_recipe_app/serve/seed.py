@@ -7,9 +7,17 @@ with app.app_context():
     db.drop_all()
     db.create_all()
 
-    user_1=User(email='kenochi@gmail.com',name='ken',password='1234')
-    user_2=User(email='andrew@gmail.com',name='andrew',password='1111')
-    user_3=User(email='david@gmail.com',name='david',password='2222')
+    user_1=User(email='kenochi@gmail.com',name='ken')
+    user_1.thee_hash('1234')
+
+    user_2=User(email='andrew@gmail.com',name='andrew')
+    user_2.thee_hash('5463')
+
+    user_3=User(email='david@gmail.com',name='david')
+    user_3.thee_hash('9758')
+
+    db.session.add_all([user_1,user_2,user_3])
+    db.session.commit()
 
     githeri = Recipe(
             name="githeri",
