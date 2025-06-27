@@ -1,5 +1,5 @@
-from serve.extentions import db
-from werkzeug.security import generate_password_hash
+from serve.extensions import db
+from werkzeug.security import generate_password_hash,check_password_hash
 from sqlalchemy_serializer import SerializerMixin
 
 
@@ -26,13 +26,15 @@ class User(db.Model,SerializerMixin):
 
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String)
-    name = db.Column(db.String)
-    password = db.Column(db.String)
-
-    def thee_hash(self,password):
-        self.password=generate_password_hash(password)
+    name= db.Column(db.String)
+    password= db.Column(db.String)
 
     recipe=db.relationship('Recipe',back_populates='user')
 
-    def __repr__(self):
-        return f'<User {self.id}, {self.email}, {self.name}, {self.password}>'
+    def password_hash(self,password):
+        self.password=generate_password_hash(password)
+
+    def set_password(self, password):
+        self.password= check_password_hash(password)
+
+

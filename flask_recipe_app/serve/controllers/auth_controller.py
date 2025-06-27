@@ -1,7 +1,6 @@
 from werkzeug.security import generate_password_hash
 from flask import Blueprint
-from serve.extentions import db
-from serve.app import app
+from serve.extensions import db
 from flask import request, jsonify
 from serve.models import User
 
