@@ -1,4 +1,4 @@
-from serve.extentions import db
+from serve.extensions import db
 from serve.models import User, Recipe
 from serve.app import app
 
@@ -8,17 +8,17 @@ with app.app_context():
 
     # Create users
     user1 = User(email='kenochi@gmail.com', name='ken')
-    user1.password = '1234'
+    user1.password_hash('1234')
 
     user2 = User(email='andrew@gmail.com', name='andrew')
-    user2.password = '1111'
+    user2.password_hash('7623')
 
     user3 = User(email='david@gmail.com', name='david')
-    user3.password = '2222'
+    user3.password_hash('12145')
 
     # Create recipes
     githeri = Recipe(
-        name="Githeri",
+        name="Beef",
         description="Tender beef simmered with carrots and potatoes.",
         ingredients="Beef, carrots, potatoes, onions, garlic, tomato paste, spices",
         instructions="Brown beef, add chopped veggies, simmer until soft and flavorful.",
