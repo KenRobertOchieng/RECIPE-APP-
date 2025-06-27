@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,} from "react-router-dom";
 import { FaTrash, FaEdit } from "react-icons/fa";
 import Footer from "../components/Footer";
 import "./Home.css";
@@ -15,52 +15,32 @@ function Home({ recipes, setRecipes }) {
     }, 1000);
   };
 
-  const handleDeleteClick = (id) => {
-<<<<<<< HEAD
-    const confirmDelete = window.confirm(
-      `Are you sure you want to delete ${
-        recipes.find((r) => r.id === id)?.name
-      }?`
-    );
-    if (!confirmDelete) {
-      return;
-    }
-    fetch(`https://my-recipe-sooty.vercel.app/recipes/${id}`, {
-      method: "DELETE",
-    })
-      .then((response) => {
-        if (response.ok) {
-          setRecipes((prevRecipes) =>
-            prevRecipes.filter((recipe) => recipe.id !== id)
-          );
-          console.log(`Recipe with ID ${id} deleted successfully.`);
-        } else {
-          console.error("Failed to delete recipe.");
-        }
-      })
-      .catch((error) => {
-        console.error("Error deleting recipe:", error);
-=======
-    const recipeName = recipes.find(r => r.id === id)?.name || "this recipe";
-    const confirmDelete = window.confirm(`Are you sure you want to delete ${recipeName}?`);
-    if (!confirmDelete) return;
+    const handleDeleteClick = (id) => {
+        const confirmDelete = window.confirm(`Are you sure you want to delete ${recipes.find(r => r.id === id)?.name}?`);
+        if (!confirmDelete) {
+            return;
+          }
+          
+        const token = localStorage.getItem("token");
 
-    fetch(`http://localhost:3000/recipes/${id}`, {
-      method: 'DELETE',
-    })
-      .then(response => {
-        if (response.ok) {
-          setRecipes(prevRecipes => prevRecipes.filter(recipe => recipe.id !== id));
-          console.log(`Recipe with ID ${id} deleted successfully.`);
-        } else {
-          console.error('Failed to delete recipe.');
-        }
-      })
-      .catch(error => {
-        console.error('Error deleting recipe:', error);
->>>>>>> 9c6d6d964c23c6f568c17676cda2ffa8570aa218
-      });
-  };
+        fetch(`http://127.0.0.1:5000/recipes/${id}`, {
+            method: 'DELETE',
+                headers: {
+              "Authorization": `Bearer ${token}`
+    }
+        })
+            .then(response => {
+                if (response.ok) {
+                    setRecipes(prevRecipes => prevRecipes.filter(recipe => recipe.id !== id));
+                    console.log(`Recipe with ID ${id} deleted successfully.`);
+                } else {
+                    console.error('Failed to delete recipe.');
+                }
+            })
+            .catch(error => {
+                console.error('Error deleting recipe:', error);
+            });
+    };
 
   return (
     <div className="my-home">
@@ -68,46 +48,8 @@ function Home({ recipes, setRecipes }) {
         {recipes.map((recipe) => (
           <div key={recipe.id} className="recipe-card">
             <div
-              className="recipe-image-container"
+              className=""
               onClick={() => handleViewClick(recipe)}
-<<<<<<< HEAD
-              style={{ cursor: "pointer" }}
-            >
-              <img
-                src={recipe.image}
-                alt={recipe.name}
-                className="recipe-image"
-              />
-              {recipe.cookingTime && (
-                <div className="recipe-time">{recipe.cookingTime}</div>
-              )}{" "}
-              {/* Assuming 'cookingTime' exists */}
-            </div>
-            <div className="recipe-details">
-              {recipe.category && (
-                <p className="recipe-category">
-                  {recipe.category?.toUpperCase()}
-                </p>
-              )}{" "}
-              {/* Assuming 'category' exists */}
-              <h3 className="recipe-title">{recipe.name}</h3>
-              {recipe.author && (
-                <p className="recipe-author">Author: {recipe.author}</p>
-              )}{" "}
-              {/* Assuming 'author' exists */}
-              <div className="recipe-actions">
-                <div className="admin-actions">
-                  <button
-                    onClick={() => navigate(`/edit/${recipe.id}`)}
-                    aria-label="Edit"
-                  >
-                    <FaEdit className="edit-icon" />
-                  </button>
-                  <button
-                    onClick={() => handleDeleteClick(recipe.id)}
-                    aria-label="Delete"
-                  >
-=======
               style={{ cursor: 'pointer' }}
             >
               <img src={recipe.image} alt={recipe.name} className="recipe-image" />
@@ -123,18 +65,13 @@ function Home({ recipes, setRecipes }) {
                     <FaEdit className="edit-icon" />
                   </button>
                   <button onClick={() => handleDeleteClick(recipe.id)} aria-label="Delete">
->>>>>>> 9c6d6d964c23c6f568c17676cda2ffa8570aa218
                     <FaTrash className="delete-icon" />
                   </button>
                 </div>
               </div>
             </div>
             {loading === recipe.id && (
-<<<<<<< HEAD
-              <p className="loading-data">Just a sec....🤏</p>
-=======
               <p className="loading-data">Just a sec... 🤏</p>
->>>>>>> 9c6d6d964c23c6f568c17676cda2ffa8570aa218
             )}
           </div>
         ))}

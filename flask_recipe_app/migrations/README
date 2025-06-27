@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Flask Recipe App Migrations
 
 This directory contains database migration scripts for the **Flask Recipe App**. Migrations are managed using [Flask-Migrate](https://flask-migrate.readthedocs.io/) and [Alembic](https://alembic.sqlalchemy.org/).
@@ -98,3 +99,6 @@ flask run
 
 This project is licensed under the MIT License. See the [LICENSE](../../LICENSE) file for details.
 **Happy Cooking & Coding!** 
+=======
+Single-database configuration for Flask.
+>>>>>>> origin/master

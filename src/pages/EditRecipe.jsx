@@ -8,9 +8,17 @@ function EditRecipe() {
   const navigate = useNavigate();
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
+  
+  const token = localStorage.getItem("token")
 
   useEffect(() => {
-    fetch(`https://my-recipe-sooty.vercel.app/recipes/${id}`)
+    
+
+    fetch(`http://127.0.0.1:5000/recipes/${id}`,{
+        headers: {
+      "Authorization": `Bearer ${token}`
+    }
+    })
       .then((res) => res.json())
       .then((data) => {
         setRecipe(data);
@@ -32,10 +40,12 @@ function EditRecipe() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch(`https://my-recipe-sooty.vercel.app/recipes/${id}`, {
+    fetch(`http://127.0.0.1:5000/recipes/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
+           "Authorization": `Bearer ${token}`
+
       },
       body: JSON.stringify(recipe),
     })
@@ -103,7 +113,6 @@ function EditRecipe() {
   );
   
 }
-
 
 
 export default EditRecipe;
