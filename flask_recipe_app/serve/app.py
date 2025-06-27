@@ -1,15 +1,32 @@
 from flask import Flask
-from serve.extentions import db,Migrate
-
 from flask_cors import CORS
+from flask_migrate import Migrate
+from flask_jwt_extended import JWTManager
 
-app=Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///our_database.db'
+from serve.extensions import db
+from serve.routes import routes
+
+app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///our_database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.json.compact = False
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True 
 
-CORS(app)
+app.config['JWT_SECRET_KEY'] = 'Kq9yJaLzG8X3sHf45bTcW0pNqZ7aMfVuRdSxE2jYtG1oLkmU'
+jwt = JWTManager(app)
+
+# Init Extensions
+CORS(app, methods=['GET', 'POST', 'OPTIONS', 'DELETE', 'PATCH'], allow_headers=['Content-Type', 'Authorization'])
 db.init_app(app)
+migrate = Migrate(app, db)
 
-migrate=Migrate(app, db)
+from serve.controllers.auth_controller import auth_bp ,login_bp
+
+app.register_blueprint(auth_bp)
+app.register_blueprint(login_bp)
+
+app.register_blueprint(routes)
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)

@@ -1,1 +1,104 @@
+<<<<<<< HEAD
+# Flask Recipe App Migrations
+
+This directory contains database migration scripts for the **Flask Recipe App**. Migrations are managed using [Flask-Migrate](https://flask-migrate.readthedocs.io/) and [Alembic](https://alembic.sqlalchemy.org/).
+
+---
+
+## 📚 Overview
+
+Database migrations are essential for evolving your application's schema without losing data or causing downtime. This project uses Flask-Migrate (built on Alembic) to handle all schema changes in a robust, version-controlled way.
+
+---
+
+## 🚀 Why Use Migrations?
+- **Version Control:** Track every change to your database schema.
+- **Team Collaboration:** Safely share and apply schema changes across your team.
+- **Incremental Updates:** Apply only the changes you need, when you need them.
+- **Rollback Support:** Revert to previous versions if something goes wrong.
+
+---
+
+## 📁 Directory Structure
+- `versions/` — Auto-generated migration scripts (one per schema change).
+- `README` — This file, explaining migrations and usage.
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/KenRobertOchieng/RECIPE-APP-.git
+cd RECIPE-APP-/flask_recipe_app
+
+# Running flask
+export FLASK_APP=serve.app
+python -m serve.seed
+flask run
+
+### 2. Set Up a Virtual Environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure Environment Variables
+- Create a `.env` file or set environment variables as needed for your Flask app (e.g., `FLASK_APP`, `DATABASE_URL`).
+
+### 5. Initialize the Database (First Time Only)
+```bash
+flask db init
+```
+
+### 6. Create a New Migration (Whenever Models Change)
+```bash
+flask db migrate -m "Describe your change"
+```
+
+### 7. Apply Migrations to the Database
+```bash
+flask db upgrade
+```
+
+### 8. Run the Flask App
+```bash
+flask run
+```
+
+---
+
+## 💡 Best Practices
+- **Review scripts:** Always check generated migration scripts before applying.
+- **Version control:** Commit migration scripts to your repository.
+- **Stay in sync:** Run migrations after every model change.
+- **Backup:** Always backup your database before running upgrades or downgrades in production.
+
+---
+
+## 🧩 Troubleshooting
+- For Flask-Migrate issues, see the [Flask-Migrate documentation](https://flask-migrate.readthedocs.io/).
+- For Alembic-specific issues, see the [Alembic documentation](https://alembic.sqlalchemy.org/).
+- If migrations fail, check for model/schema mismatches or missing dependencies.
+
+---
+
+## 👥 Contributors
+- Ken (https://github.com/KenRobertOchieng)
+- Eliud
+- marciah
+- Andrew
+- David
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](../../LICENSE) file for details.
+**Happy Cooking & Coding!** 
+=======
 Single-database configuration for Flask.
+>>>>>>> origin/master
